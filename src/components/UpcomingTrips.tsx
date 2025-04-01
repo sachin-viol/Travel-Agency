@@ -1,4 +1,6 @@
 import { Calendar, Clock, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 const tripData = [
   {
@@ -9,6 +11,7 @@ const tripData = [
     duration: "9 Days",
     dates: "June 15 - June 23, 2024",
     price: "$2,899",
+    slug: "swiss-alps-adventure"
   },
   {
     id: 2,
@@ -18,6 +21,7 @@ const tripData = [
     duration: "12 Days",
     dates: "July 3 - July 14, 2024",
     price: "$3,499",
+    slug: "japanese-wonders"
   },
   {
     id: 3,
@@ -27,6 +31,7 @@ const tripData = [
     duration: "8 Days",
     dates: "August 10 - August 17, 2024",
     price: "$2,199",
+    slug: "costa-rican-paradise"
   }
 ];
 
@@ -34,9 +39,9 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
   return (
     <div className="trip-card">
       <div className="relative h-64 overflow-hidden">
-        <img 
-          src={trip.image} 
-          alt={trip.destination} 
+        <img
+          src={trip.image}
+          alt={trip.destination}
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
         />
         <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
@@ -49,7 +54,7 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
           <MapPin size={16} className="mr-1" />
           {trip.breakdown}
         </p>
-        
+
         <div className="flex justify-between mb-4">
           <div className="flex items-center text-gray-700">
             <Clock size={18} className="mr-2 text-travel-teal" />
@@ -60,8 +65,8 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
             <span>{trip.dates}</span>
           </div>
         </div>
-        
-        <button className="w-full btn-outline mt-2">View Trip</button>
+
+        <Link to={`/trip/${trip.slug}`} className="w-full btn-outline mt-2 block text-center">View Trip</Link>
       </div>
     </div>
   );
@@ -78,15 +83,17 @@ const UpcomingTrips = () => {
             Book your next adventure today.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tripData.map((trip) => (
             <TripCard key={trip.id} trip={trip} />
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <button className="btn-primary">View All Trips</button>
+          <Link to="/trips" >
+            <button className="btn-primary">View All Trips</button>
+          </Link>
         </div>
       </div>
     </section>

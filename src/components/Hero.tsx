@@ -20,7 +20,7 @@ const Hero = () => {
         playsInline
         className="absolute w-full h-full object-cover"
       >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-mountain-range-and-river-during-sunset-41909-large.mp4" type="video/mp4" />
+        <source src="https://video.wixstatic.com/video/11062b_20125b6ebe434abd96c4d7773634d1db/1080p/mp4/file.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
