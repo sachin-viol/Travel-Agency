@@ -126,7 +126,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
-          <p>© {currentYear} COMPANY NAME. All rights reserved.</p>
+          <p>© {currentYear} WANDER TRIBE. All rights reserved.</p>
           <div className="mt-2 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
