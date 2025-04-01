@@ -77,8 +77,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Email Us</h3>
                     <p className="text-gray-600">
-                      info@wanderlux.com<br />
-                      bookings@wanderlux.com
+                      info@company.com<br />
+                      bookings@company.com
                     </p>
                   </div>
                 </div>

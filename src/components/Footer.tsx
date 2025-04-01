@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-4">WANDERLUX</h3>
+            <h3 className="text-2xl font-serif font-bold mb-4">COMPANY NAME</h3>
             <p className="text-white/80 mb-4">
               Creating unforgettable journeys and meaningful connections for adventurous souls since 2010.
             </p>
@@ -93,8 +93,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0" />
-                <a href="mailto:info@wanderlux.com" className="text-white/80 hover:text-white transition-colors">
-                  info@wanderlux.com
+                <a href="mailto:info@company.com" className="text-white/80 hover:text-white transition-colors">
+                  info@company.com
                 </a>
               </li>
             </ul>
@@ -126,7 +126,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
-          <p>© {currentYear} WANDERLUX. All rights reserved.</p>
+          <p>© {currentYear} COMPANY NAME. All rights reserved.</p>
           <div className="mt-2 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

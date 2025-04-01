@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom flex justify-between items-center">
-        <Link to="/" className="text-2xl font-serif font-bold text-white">WANDERLUX</Link>
+        <Link to="/" className="text-2xl font-serif font-bold text-white">COMPANY NAME</Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
