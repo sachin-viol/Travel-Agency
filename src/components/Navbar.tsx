@@ -42,6 +42,7 @@ const Navbar = () => {
             <button
               className="navbar-item flex items-center"
               onClick={() => setDropdownOpen(!dropdownOpen)}
+              onBlur={() => setTimeout(() => setDropdownOpen(false), 100)}
             >
               More <ChevronDown className="ml-1 h-4 w-4" />
             </button>

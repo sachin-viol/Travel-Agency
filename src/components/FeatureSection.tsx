@@ -1,4 +1,5 @@
 import { Users, CreditCard, Clipboard, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FeatureSection = () => {
   return (
@@ -71,7 +72,9 @@ const FeatureSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="btn-primary">Who We Are</button>
+          <Link to="/about">
+            <button className="btn-primary">Who We Are</button>
+          </Link>
         </div>
       </div>
     </section>

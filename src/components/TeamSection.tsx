@@ -1,5 +1,6 @@
 import React from 'react';
 import { Linkedin, Instagram } from 'lucide-react';
+import Navbar from './Navbar';
 
 const teamMembers = [
   {
@@ -72,21 +73,21 @@ const TeamSection = () => {
           <h2 className="text-4xl font-bold mb-4 text-travel-earth">Meet Our Team</h2>
           <p className="text-xl text-gray-600">The ideal set of extraordinary people</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-travel-sand-light">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
+                <img
+                  src={member.image}
+                  alt={member.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               <h3 className="text-2xl font-bold text-travel-earth mb-1">{member.name}</h3>
               <p className="text-xl text-gray-600 mb-3">{member.position}</p>
-              
+
               <div className="flex space-x-3 mb-4">
                 <a href={member.social.linkedin} className="text-travel-teal hover:text-travel-earth transition-colors">
                   <Linkedin />
@@ -95,7 +96,7 @@ const TeamSection = () => {
                   <Instagram />
                 </a>
               </div>
-              
+
               <div className="border-t border-gray-200 pt-4 w-full">
                 <p className="text-gray-600">{member.bio}</p>
               </div>
