@@ -9,7 +9,7 @@ import GroupTripNote from '@/components/GroupTripNote';
 import InternationalTrips from '@/components/InternationalTrips';
 import ExploreIndia from '@/components/ExploreIndia';
 import RomanticEscapes from '@/components/RomanticEscapes';
-import WhyChooseUs from '@/components/WhyChooseus';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 const Index = () => {
   return (
