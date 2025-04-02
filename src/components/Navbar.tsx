@@ -1,30 +1,35 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
+      if (location.pathname === "/") {
+        setIsScrolled(window.scrollY > 50);
       } else {
-        setIsScrolled(false);
+        setIsScrolled(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll);
 
+    // Run once to set initial state
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.pathname]); 
+  
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300  ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="text-2xl font-serif font-bold text-white">WANDER TRIBE</Link>
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/about" className="navbar-item">About</Link>
@@ -32,15 +37,15 @@ const Navbar = () => {
           <Link to="/blog" className="navbar-item">Blog</Link>
           <Link to="/past-trips" className="navbar-item">Past Trips</Link>
           <Link to="/contact" className="navbar-item">Contact</Link>
-          
+
           <div className="relative">
-            <button 
+            <button
               className="navbar-item flex items-center"
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
               More <ChevronDown className="ml-1 h-4 w-4" />
             </button>
-            
+
             {dropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
                 <Link to="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-travel-teal-light/10 hover:text-travel-teal">FAQ</Link>
@@ -50,16 +55,16 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        
+
         {/* Mobile Navigation Toggle */}
-        <button 
+        <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-      
+
       {/* Mobile Navigation Menu */}
       {isOpen && (
         <div className="md:hidden bg-travel-earth absolute top-full left-0 w-full shadow-md">

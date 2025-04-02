@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import TeamSection from '@/components/TeamSection';
+import CompanyValues from '@/components/CompanyValues';
 
 const About = () => {
   return (
@@ -9,14 +11,14 @@ const About = () => {
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-travel-earth">About Us</h1>
           <p className="text-lg text-gray-600 mb-16">
-            Learn about our story, mission, and the passionate team behind COMPANY NAME.
+            Learn about our story, mission, and the passionate team behind WANDERLUX.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-4 text-travel-earth">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Founded in 2010 by a group of passionate travelers who believed that travel should be more than just checking off bucket list items, COMPANY NAME was born from a desire to create meaningful connections through immersive experiences.
+                Founded in 2010 by a group of passionate travelers who believed that travel should be more than just checking off bucket list items, WANDERLUX was born from a desire to create meaningful connections through immersive experiences.
               </p>
               <p className="text-gray-600 mb-4">
                 After years of independent travel across all seven continents, our founders recognized that the most memorable moments came from authentic cultural exchanges and connections with like-minded adventurers.
@@ -61,13 +63,19 @@ const About = () => {
               </p>
             </div>
           </div>
-
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-8 text-travel-earth">Ready to Start Your Adventure?</h2>
-            <button className="btn-primary">Explore Our Trips</button>
-          </div>
         </div>
       </div>
+
+      <TeamSection />
+      <CompanyValues />
+
+      <div className="py-16 bg-white">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl font-bold mb-8 text-travel-earth">Ready to Start Your Adventure?</h2>
+          <button className="btn-primary">Explore Our Trips</button>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

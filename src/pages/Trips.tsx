@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Calendar, Clock, MapPin, Filter } from 'lucide-react';
+import { Calendar, Clock, MapPin, Filter, Globe, Award, Heart, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const trips = [
@@ -83,6 +83,49 @@ const trips = [
   }
 ];
 
+const TripCategories = () => {
+  const categories = [
+    { name: "Adventure", icon: <Globe className="h-6 w-6 mb-3" />, color: "bg-travel-terracotta/10 text-travel-terracotta" },
+    { name: "Cultural", icon: <Award className="h-6 w-6 mb-3" />, color: "bg-travel-teal/10 text-travel-teal" },
+    { name: "Beach", icon: <Heart className="h-6 w-6 mb-3" />, color: "bg-travel-sand/10 text-travel-sand" },
+    { name: "Backpacking", icon: <Users className="h-6 w-6 mb-3" />, color: "bg-travel-earth/10 text-travel-earth" },
+  ];
+
+  return (
+    <div className="py-16 bg-white">
+      <div className="container-custom">
+        <h2 className="text-2xl font-bold text-travel-earth mb-10 text-center">Browse by Trip Type</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {categories.map((category) => (
+            <div key={category.name} className="flex flex-col items-center p-6 rounded-lg border border-gray-100 hover:shadow-md transition-all cursor-pointer">
+              <div className={`rounded-full p-3 ${category.color}`}>
+                {category.icon}
+              </div>
+              <span className="font-medium">{category.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const TripSearchBanner = () => {
+  return (
+    <div className="py-16 bg-travel-earth text-white">
+      <div className="container-custom text-center">
+        <h2 className="text-3xl font-bold mb-6">Can't Find the Perfect Trip?</h2>
+        <p className="text-lg mb-8 max-w-2xl mx-auto">
+          Let our travel experts help you craft a personalized adventure tailored to your preferences and schedule.
+        </p>
+        <Link to="/contact" className="bg-white text-travel-earth px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
+          Contact Our Experts
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 const Trips = () => {
   return (
     <div className="min-h-screen">
@@ -96,12 +139,12 @@ const Trips = () => {
               and connect you with like-minded travelers.
             </p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div className="mb-4 md:mb-0">
               <h2 className="text-2xl font-semibold text-travel-earth">All Trips</h2>
             </div>
-            
+
             <div className="flex flex-wrap gap-4">
               <div className="relative">
                 <button className="flex items-center bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
@@ -109,7 +152,7 @@ const Trips = () => {
                   <span>Filter</span>
                 </button>
               </div>
-              
+
               <select className="bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
                 <option>Sort by: Featured</option>
                 <option>Price: Low to High</option>
@@ -120,14 +163,14 @@ const Trips = () => {
               </select>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trips.map((trip) => (
               <div key={trip.id} className="trip-card">
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={trip.image} 
-                    alt={trip.destination} 
+                  <img
+                    src={trip.image}
+                    alt={trip.destination}
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
@@ -143,7 +186,7 @@ const Trips = () => {
                     <MapPin size={16} className="mr-1" />
                     {trip.breakdown}
                   </p>
-                  
+
                   <div className="flex justify-between mb-4">
                     <div className="flex items-center text-gray-700">
                       <Clock size={18} className="mr-2 text-travel-teal" />
@@ -154,7 +197,7 @@ const Trips = () => {
                       <span>{trip.dates}</span>
                     </div>
                   </div>
-                  
+
                   <Link to={`/trip/${trip.slug}`} className="w-full btn-outline mt-2 block text-center">View Trip</Link>
                 </div>
               </div>
@@ -162,6 +205,8 @@ const Trips = () => {
           </div>
         </div>
       </div>
+      <TripSearchBanner />
+      <TripCategories />
       <Footer />
     </div>
   );

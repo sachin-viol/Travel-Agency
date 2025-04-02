@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Calendar, User } from 'lucide-react';
+import { Calendar, User, Search, Bookmark, ArrowRight, Mail } from 'lucide-react';
 
 const blogPosts = [
   {
@@ -59,6 +59,101 @@ const blogPosts = [
   }
 ];
 
+const BlogCategories = () => {
+  const categories = [
+    { name: "Destinations", count: 12 },
+    { name: "Travel Tips", count: 8 },
+    { name: "Food & Culture", count: 6 },
+    { name: "Solo Travel", count: 7 },
+    { name: "Photography", count: 5 },
+    { name: "Responsible Travel", count: 4 },
+  ];
+
+  return (
+    <div className="bg-gray-50 p-6 rounded-lg mb-8">
+      <h3 className="text-xl font-bold mb-4 text-travel-earth">Categories</h3>
+      <div className="space-y-2">
+        {categories.map((category) => (
+          <div key={category.name} className="flex justify-between items-center group cursor-pointer">
+            <div className="flex items-center">
+              <ArrowRight size={16} className="mr-2 text-travel-teal opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="text-gray-700 group-hover:text-travel-teal transition-colors">{category.name}</span>
+            </div>
+            <span className="bg-travel-sand-light/50 text-travel-earth px-2 py-1 rounded-full text-xs">
+              {category.count}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const PopularPosts = () => {
+  const popularPosts = blogPosts.slice(0, 3);
+
+  return (
+    <div className="bg-gray-50 p-6 rounded-lg mb-8">
+      <h3 className="text-xl font-bold mb-4 text-travel-earth">Popular Posts</h3>
+      <div className="space-y-4">
+        {popularPosts.map((post) => (
+          <div key={post.id} className="flex items-start space-x-3 group cursor-pointer">
+            <div className="w-16 h-16 flex-shrink-0 overflow-hidden rounded">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div>
+              <h4 className="font-medium text-gray-800 group-hover:text-travel-teal transition-colors line-clamp-2">
+                {post.title}
+              </h4>
+              <p className="text-sm text-gray-500 mt-1">{post.date}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const SearchBox = () => {
+  return (
+    <div className="bg-gray-50 p-6 rounded-lg mb-8">
+      <h3 className="text-xl font-bold mb-4 text-travel-earth">Search</h3>
+      <div className="relative">
+        <input
+          type="text"
+          placeholder="Search articles..."
+          className="w-full p-3 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-travel-teal/20 focus:border-travel-teal"
+        />
+        <Search size={18} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+      </div>
+    </div>
+  );
+};
+
+const NewsletterSignup = () => {
+  return (
+    <div className="bg-travel-teal text-white p-6 rounded-lg">
+      <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+      <p className="mb-4 text-white/80">Get travel tips and inspiration delivered to your inbox.</p>
+      <div className="flex flex-col space-y-3">
+        <input
+          type="email"
+          placeholder="Your email address"
+          className="w-full p-3 border border-white/20 bg-white/10 rounded-lg placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30"
+        />
+        <button className="flex items-center justify-center bg-white text-travel-teal font-medium py-3 px-4 rounded-lg hover:bg-white/90 transition-colors">
+          <Mail size={16} className="mr-2" />
+          Subscribe
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const Blog = () => {
   return (
     <div className="min-h-screen">
@@ -72,44 +167,56 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="mb-3">
-                    <span className="bg-travel-teal-light/20 text-travel-teal px-3 py-1 rounded-full text-sm font-medium">
-                      {post.category}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 text-travel-earth">{post.title}</h3>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <div className="flex justify-between items-center text-sm text-gray-500">
-                    <div className="flex items-center">
-                      <Calendar size={14} className="mr-1" />
-                      <span>{post.date}</span>
+          <div className="flex flex-col lg:flex-row gap-8">
+            <div className="lg:w-2/3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {blogPosts.map((post) => (
+                  <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div className="h-48 overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                      />
                     </div>
-                    <div className="flex items-center">
-                      <User size={14} className="mr-1" />
-                      <span>{post.author}</span>
+                    <div className="p-6">
+                      <div className="mb-3">
+                        <span className="bg-travel-teal-light/20 text-travel-teal px-3 py-1 rounded-full text-sm font-medium">
+                          {post.category}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold mb-2 text-travel-earth">{post.title}</h3>
+                      <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                      <div className="flex justify-between items-center text-sm text-gray-500">
+                        <div className="flex items-center">
+                          <Calendar size={14} className="mr-1" />
+                          <span>{post.date}</span>
+                        </div>
+                        <div className="flex items-center">
+                          <User size={14} className="mr-1" />
+                          <span>{post.author}</span>
+                        </div>
+                      </div>
+                      <button className="w-full mt-6 py-2 text-travel-teal border border-travel-teal rounded-md hover:bg-travel-teal hover:text-white transition-colors flex items-center justify-center">
+                        <span>Read More</span>
+                        <ArrowRight size={16} className="ml-2" />
+                      </button>
                     </div>
                   </div>
-                  <button className="w-full mt-6 py-2 text-travel-teal border border-travel-teal rounded-md hover:bg-travel-teal hover:text-white transition-colors">
-                    Read More
-                  </button>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
 
-          <div className="mt-12 text-center">
-            <button className="btn-primary">Load More Articles</button>
+              <div className="mt-12 text-center">
+                <button className="btn-primary">Load More Articles</button>
+              </div>
+            </div>
+
+            <div className="lg:w-1/3">
+              <SearchBox />
+              <BlogCategories />
+              <PopularPosts />
+              <NewsletterSignup />
+            </div>
           </div>
         </div>
       </div>
