@@ -67,7 +67,7 @@ module.exports = {
   				terracotta: '#E76F51',
   				sand: '#F4A261',
   				'sand-light': '#F9DBBD',
-  				earth: '#264653',
+  				earth: '#09493c',
   				'earth-light': '#557B83'
   			}
   		},

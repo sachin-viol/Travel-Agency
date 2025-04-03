@@ -66,15 +66,15 @@ const ExploreIndia = () => {
       <div className="absolute inset-0 z-0 bg-cover bg-center opacity-20" 
         style={{ backgroundImage: 'url(https://images.pexels.com/photos/574313/pexels-photo-574313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' }}>
       </div>
-      <div className="container-custom">
+      <div className="container-custom relative z-10">
         <div className="max-w-3xl mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Explore India</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4  text-travel-earth">Explore India</h2>
           <p className="text-lg text-gray-600">
             Discover the diverse landscapes and rich cultural heritage of Incredible India
           </p>
         </div>
         
-        <Link to="/trips?category=india" className="btn-primary mb-8 inline-flex items-center">
+        <Link to="/trips?category=india" className="btn-primary  mb-8 inline-flex items-center ">
           Explore <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
         

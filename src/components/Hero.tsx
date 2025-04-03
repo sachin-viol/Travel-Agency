@@ -38,7 +38,7 @@ const Hero = () => {
             Experience authentic cultures, breathtaking landscapes, and unforgettable moments.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <button className="bg-travel-teal hover:bg-travel-teal-light text-white font-medium py-3 px-8 rounded-md transition-all duration-300">
+            <button className="bg-travel-earth hover:bg-travel-earth/85 text-white font-medium py-3 px-8 rounded-md transition-all duration-300">
               Explore Trips
             </button>
             <button className="bg-transparent hover:bg-white/10 text-white border-2 border-white font-medium py-3 px-8 rounded-md transition-all duration-300">

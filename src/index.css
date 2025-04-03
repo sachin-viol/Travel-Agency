@@ -111,11 +111,11 @@
   }
 
   .btn-primary {
-    @apply bg-travel-teal text-white px-6 py-3 rounded-md hover:bg-travel-earth transition-all duration-300;
+    @apply bg-travel-earth text-white px-6 py-3 rounded-md hover:bg-travel-earth transition-all duration-300;
   }
 
   .btn-outline {
-    @apply border-2 border-travel-teal text-travel-teal px-6 py-3 rounded-md hover:bg-travel-teal hover:text-white transition-all duration-300;
+    @apply border-2 border-travel-earth text-travel-earth px-6 py-3 rounded-md hover:bg-travel-earth hover:text-white transition-all duration-300;
   }
 
   .text-gradient {
