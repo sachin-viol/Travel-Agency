@@ -52,7 +52,24 @@ const BestMoments = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-4 mt-4 sm:hidden">
+          {images.slice(0, 2).map((image, index) => (
+            <div key={index} className="relative group overflow-hidden">
+              <img
+                src={image.url}
+                alt={image.alt}
+                className="w-full aspect-square object-cover"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <a href="#" className="text-white">
+                  <Instagram size={28} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-4 gap-4 sm:mt-0 mt-4">
           {images.slice(0, 4).map((image, index) => (
             <div key={index} className="relative group overflow-hidden">
               <img
@@ -69,7 +86,7 @@ const BestMoments = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
+        <div className="grid grid-cols-5 gap-4 mt-4">
           {images.slice(4).map((image, index) => (
             <div key={index} className="relative group overflow-hidden">
               <img
@@ -86,8 +103,24 @@ const BestMoments = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+        <div className="grid grid-cols-4 gap-4 mt-4">
           {images.slice(0, 4).map((image, index) => (
+            <div key={index} className="relative group overflow-hidden">
+              <img
+                src={image.url}
+                alt={image.alt}
+                className="w-full aspect-square object-cover"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <a href="#" className="text-white">
+                  <Instagram size={28} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-4 sm:hidden">
+          {images.slice(0, 2).map((image, index) => (
             <div key={index} className="relative group overflow-hidden">
               <img
                 src={image.url}
