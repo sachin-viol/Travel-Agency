@@ -14,27 +14,27 @@ const GuidedTravel = () => {
             </p>
             
             <div className="relative">
-              <div className="rounded-full overflow-hidden border-8 border-white w-64 h-64 z-20 relative">
+              <div className="rounded-full overflow-hidden border-8 border-white md:w-64 md:h-64 w-32 h-32 z-20 relative">
                 <img 
                   src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4" 
                   alt="Traveler with bird" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute bottom-4 right-12 rounded-full overflow-hidden border-8 border-white w-40 h-40 z-10">
+              <div className="absolute bottom-4 right-12 rounded-full overflow-hidden border-8 border-white md:w-40 md:h-40 w-20 h-20 z-10">
                 <img 
                   src="https://images.unsplash.com/photo-1534008897995-27a23e859048" 
                   alt="Group travel" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -left-6 top-24 z-30">
+              <div className="absolute md:-left-6 md:top-24 top-3 left-1 z-30">
                 <div className="w-3 h-3 bg-travel-earth rounded-full"></div>
               </div>
               {/* <div className="absolute right-20 top-0 z-30">
                 <div className="w-3 h-3 bg-travel-earth rounded-full"></div>
               </div> */}
-              <div className="absolute right-8 bottom-24 z-30">
+              <div className="absolute md:right-8 md:bottom-24 z-30 bottom-7 right-10">
                 <div className="w-3 h-3 bg-travel-earth rounded-full"></div>
               </div>
               <svg className="absolute top-0 left-0 w-full h-full z-0" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
@@ -49,10 +49,10 @@ const GuidedTravel = () => {
             </div>
           </div>
           
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center md:pl-0 pl-5">
             <div className="relative mb-16">
-              <div className="absolute -left-8 top-0">
-                <div className="w-6 h-6 bg-travel-teal rounded-full"></div>
+              <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
+                <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Social Connections</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
@@ -62,8 +62,8 @@ const GuidedTravel = () => {
             </div>
             
             <div className="relative mb-16 ml-20">
-              <div className="absolute -left-8 top-0">
-                <div className="w-6 h-6 bg-travel-teal rounded-full"></div>
+              <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
+                <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Independence</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
@@ -73,8 +73,8 @@ const GuidedTravel = () => {
             </div>
             
             <div className="relative mb-16">
-              <div className="absolute -left-8 top-0">
-                <div className="w-6 h-6 bg-travel-teal rounded-full"></div>
+              <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
+                <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Expertly Planned</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
@@ -85,8 +85,8 @@ const GuidedTravel = () => {
             </div>
             
             <div className="relative ml-20">
-              <div className="absolute -left-8 top-0">
-                <div className="w-6 h-6 bg-travel-teal rounded-full"></div>
+              <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
+                <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-travel-earth">The Best Pacing</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">

@@ -45,7 +45,7 @@ const upcomingTrips = [
 const popularTrips = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1601295436029-19edcba04aa9",
+    image: "https://images.unsplash.com/photo-1673195394963-466a894b6bca?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     destination: "Santorini Escape",
     breakdown: "Athens • Mykonos • Santorini",
     duration: "7 Days",
@@ -88,7 +88,7 @@ const internationalTrips = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1573499931825-6fcd48f57c22",
+    image: "https://images.unsplash.com/photo-1649686887571-afa47f5428e4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     destination: "Vietnam",
     breakdown: "Hanoi • Ha Long Bay • Hoi An • Ho Chi Minh",
     duration: "9 Days",
@@ -193,29 +193,30 @@ const FeaturedTours = () => {
         </div>
         
         <Tabs defaultValue="upcoming" value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <div className="flex justify-center mb-10">
-            <TabsList className="bg-transparent border-b border-gray-200 w-full flex justify-center space-x-8">
+          {/* Updated TabsList for better responsiveness */}
+          <div className="flex justify-center mb-10 overflow-x-auto scrollbar-hide">
+            <TabsList className="bg-transparent border-b border-gray-200 w-full flex flex-nowrap justify-start sm:justify-center space-x-2 sm:space-x-4 md:space-x-8 px-4">
               <TabsTrigger 
                 value="upcoming" 
-                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 Upcoming Adventures
               </TabsTrigger>
               <TabsTrigger 
                 value="popular" 
-                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 Popular
               </TabsTrigger>
               <TabsTrigger 
                 value="international" 
-                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 International
               </TabsTrigger>
               <TabsTrigger 
                 value="india" 
-                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 India
               </TabsTrigger>

@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          <div className="bg-green-700 p-10 text-white rounded-tl-[40px]">
+          <div className="bg-green-700 p-10 text-white md:rounded-tl-[40px]">
             <div className="mb-6 flex justify-center">
               <div className="rounded-full bg-white p-5 relative">
                 <Shield size={42} className="text-green-700" />
@@ -103,7 +103,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="bg-sky-100 p-10 rounded-tr-[40px]">
+          <div className="bg-sky-100 p-10 md:rounded-tr-[40px]">
             <div className="mb-6 flex justify-center">
               <div className="rounded-full bg-white p-5 relative">
                 <Heart size={42} className="text-travel-teal" />
