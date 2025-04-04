@@ -268,9 +268,6 @@ const DesktopNavigation = () => {
 
       {/* Search and Contact */}
       <div className="flex items-center space-x-4 ml-auto">
-        <button className="text-white hover:text-white/80">
-          <Search size={20} />
-        </button>
         <div className="flex items-center text-white">
           <Phone size={20} className="mr-2" />
           <span className="font-medium whitespace-nowrap">1.888.680.1241</span>

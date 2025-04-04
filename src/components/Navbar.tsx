@@ -422,8 +422,8 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-travel-earth py-4'}`}>
       <div className="container-custom flex justify-evenly items-center">
-        <div>
-          <Link to="/" className="text-2xl font-serif font-bold text-white">WANDERLUX</Link>
+        <div className='flex items-center space-x-4 w-full'>
+          <Link to="/" className="text-2xl font-serif font-bold text-white">WANDER TRIBE</Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -431,9 +431,6 @@ const Navbar = () => {
 
         {/* Mobile Navigation Toggle */}
         <div className="md:hidden flex items-center space-x-4">
-          <button className="text-white hover:text-white/80">
-            <Search size={20} />
-          </button>
           <button
             className="text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
