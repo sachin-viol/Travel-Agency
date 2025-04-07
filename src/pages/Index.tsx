@@ -12,21 +12,23 @@ import BestMoments from '@/components/BestMoments';
 import TourCategories from '@/components/TourCategories';
 import GuidedTravel from '@/components/GuidedTravel';
 import FeaturedTours from '@/components/FeaturedTours';
+import BookingSteps from '@/components/BookingSteps';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <TourCategories />
+      <WhyChooseUs />
+      {/* <TourCategories /> */}
+      <UpcomingTrips />
       <FeatureSection />
       {/* <InternationalTrips />
       <ExploreIndia />
-      <UpcomingTrips />
       <RomanticEscapes /> */}
-      <FeaturedTours />
-      <WhyChooseUs />
-      <GuidedTravel />
+      {/* <FeaturedTours /> */}
+      {/* <GuidedTravel /> */}
+      <BookingSteps />
       <BestMoments />
       <Testimonials />
       <Footer />
