@@ -256,8 +256,8 @@ const FeaturedTours = () => {
           </TabsContent>
         </Tabs>
         
-        <div className="text-center mt-12">
-          <Link to="/trips" className="btn-primary flex items-center justify-center mx-auto w-auto">
+        <div className="text-center mt-12 w-1/3 mx-auto">
+          <Link to="/trips" className="btn-primary flex items-center justify-center ">
             Browse All Trips
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
