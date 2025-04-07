@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
     <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Confidently WANDERLUX</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Confidently WANDER TRIBE</h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Travel with trust. Because this is your trip - something you've planned for and
             dreamed about. You should feel confident in your journey every step of the way.
@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
             <h3 className="text-xl font-bold mb-4 text-center">Industry-Leading Travel Protection</h3>
             <p className="text-center">
               Cancel for any reason (bad hair day applies) up to 24 hours before your tour leaves and
-              get a full money-back refund. WANDERLUX issued a record-breaking $15 million cash back to
+              get a full money-back refund. WANDER TRIBE issued a record-breaking $15 million cash back to
               travelers during the COVID-19 pandemic.
             </p>
           </div>

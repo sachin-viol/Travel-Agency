@@ -126,7 +126,7 @@ module.exports = {
         "slide-in": "slide-in 0.7s ease-out",
       },
       fontFamily: {
-        serif: ["Playfair Display", "serif"],
+        serif: ["Lexend", "serif"],
         sans: ["Inter", "sans-serif"],
       },
     },
