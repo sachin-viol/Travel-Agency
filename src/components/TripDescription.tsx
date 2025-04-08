@@ -7,7 +7,7 @@ interface TripDescriptionProps {
 
 const TripDescription = ({ description, galleryImage }: TripDescriptionProps) => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="rounded-2xl overflow-hidden">

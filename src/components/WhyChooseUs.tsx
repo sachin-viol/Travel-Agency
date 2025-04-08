@@ -29,7 +29,7 @@
 //     <section className="py-16 bg-travel-sand-light/30">
 //       <div className="container-custom">
 //         <div className="text-center mb-16">
-//           <div className="inline-block bg-travel-teal text-white px-6 py-2 rounded-md mb-6 text-xl font-bold">
+//           <div className="inline-block bg-travel-teal text-travel-cloud-white px-6 py-2 rounded-md mb-6 text-xl font-bold">
 //             Why WANDER TRIBE?
 //           </div>
 //           <h2 className="text-3xl md:text-4xl font-bold text-travel-earth hidden">Why Choose Us</h2>
@@ -39,7 +39,7 @@
 //           {features.map((feature, index) => (
 //             <div 
 //               key={index} 
-//               className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+//               className="bg-travel-cloud-white p-8 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
 //             >
 //               <div className="mb-6">
 //                 <h3 className="text-2xl font-bold mb-3 text-travel-teal">{feature.title}</h3>
@@ -63,7 +63,7 @@ import { Shield, Award, Heart, CreditCard } from 'lucide-react';
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Confidently WANDER TRIBE</h2>
@@ -74,9 +74,9 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          <div className="bg-green-700 p-10 text-white md:rounded-tl-[40px]">
+          <div className="bg-green-700 p-10 text-travel-cloud-white md:rounded-tl-[40px]">
             <div className="mb-6 flex justify-center">
-              <div className="rounded-full bg-white p-5 relative">
+              <div className="rounded-full bg-travel-cloud-white p-5 relative">
                 <Shield size={42} className="text-green-700" />
                 <div className="absolute top-0 right-0 h-4 w-4 bg-yellow-300 rounded-full"></div>
               </div>
@@ -89,9 +89,9 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-          <div className="bg-travel-earth p-10 text-white">
+          <div className="bg-travel-earth p-10 text-travel-cloud-white">
             <div className="mb-6 flex justify-center">
-              <div className="rounded-full bg-white p-5 relative">
+              <div className="rounded-full bg-travel-cloud-white p-5 relative">
                 <Award size={42} className="text-travel-earth" />
                 <div className="absolute top-0 right-0 h-4 w-4 bg-yellow-300 rounded-full"></div>
               </div>
@@ -105,7 +105,7 @@ const WhyChooseUs = () => {
 
           <div className="bg-sky-100 p-10 md:rounded-tr-[40px]">
             <div className="mb-6 flex justify-center">
-              <div className="rounded-full bg-white p-5 relative">
+              <div className="rounded-full bg-travel-cloud-white p-5 relative">
                 <Heart size={42} className="text-travel-teal" />
                 <div className="absolute top-0 right-0 h-4 w-4 bg-yellow-300 rounded-full"></div>
               </div>

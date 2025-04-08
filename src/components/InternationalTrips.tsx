@@ -51,9 +51,9 @@ const DestinationCard = ({ destination }: { destination: typeof destinations[0] 
         className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-        <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+        <div className="absolute bottom-0 left-0 right-0 p-4 text-travel-cloud-white">
           <h3 className="text-2xl font-bold mb-1">{destination.name}</h3>
-          <p className="font-medium text-white/90">Starting Price {destination.price}</p>
+          <p className="font-medium text-travel-cloud-white/90">Starting Price {destination.price}</p>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ const DestinationCard = ({ destination }: { destination: typeof destinations[0] 
 
 const InternationalTrips = () => {
   return (
-    <section className="relative py-16 bg-white">
+    <section className="relative py-16 bg-travel-cloud-white">
       <div className="absolute inset-0 z-0 bg-cover bg-center opacity-20" 
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e)' }}>
       </div>
@@ -88,8 +88,8 @@ const InternationalTrips = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-4 bg-white/70 hover:bg-white" />
-          <CarouselNext className="-right-4 bg-white/70 hover:bg-white" />
+          <CarouselPrevious className="-left-4 bg-travel-cloud-white/70 hover:bg-travel-cloud-white" />
+          <CarouselNext className="-right-4 bg-travel-cloud-white/70 hover:bg-travel-cloud-white" />
         </Carousel>
       </div>
     </section>

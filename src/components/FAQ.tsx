@@ -56,7 +56,7 @@ const FAQ = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="pt-24 flex-grow">
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-travel-cloud-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Frequently Asked Questions</h1>
@@ -65,7 +65,7 @@ const FAQ = () => {
               </p>
             </div>
             
-            <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-sm">
+            <div className="max-w-3xl mx-auto bg-travel-cloud-white rounded-xl shadow-sm">
               <Accordion type="single" collapsible className="w-full">
                 {faqItems.map((item, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">

@@ -105,7 +105,7 @@ const FeatureSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-travel-cloud-white">
       <div className="container-custom">
         <div className="mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Immersive guided tours, all around the globe</h2>
@@ -134,20 +134,20 @@ const FeatureSection = () => {
                 >
                   {card.type === "main" ? (
                     // Main card with green background
-                    <div className="bg-travel-earth p-8 rounded-2xl flex flex-col text-white h-full ">
+                    <div className="bg-travel-earth p-8 rounded-2xl flex flex-col text-travel-cloud-white h-full ">
                       <div className='flex-grow'>
                         <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                         <p className="mb-8">{card.content}</p>
                       </div>
                       <div>
-                        <Link to={card.link} className="inline-flex items-center px-6 py-3 bg-white text-travel-earth rounded-full font-medium hover:bg-gray-100 transition-colors">
+                        <Link to={card.link} className="inline-flex items-center px-6 py-3 bg-travel-cloud-white text-travel-earth rounded-full font-medium hover:bg-gray-100 transition-colors">
                           {card.linkText}
                         </Link>
                       </div>
                     </div>
                   ) : (
                     // Regular feature cards
-                    <div className="bg-white p-8 rounded-2xl border border-gray-200 h-full">
+                    <div className="bg-travel-cloud-white p-8 rounded-2xl border border-gray-200 h-full">
                       <div className="flex justify-center mb-6">
                         {card.icon}
                       </div>
@@ -176,7 +176,7 @@ const FeatureSection = () => {
           {slidePosition > 0 && (
             <button
               onClick={slideLeft}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none z-10"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-travel-cloud-white rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none z-10"
               aria-label="Previous slide"
             >
               <ChevronLeft size={24} className="text-travel-earth" />
@@ -186,7 +186,7 @@ const FeatureSection = () => {
           {slidePosition < maxSlide && (
             <button
               onClick={slideRight}
-              className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none z-10"
+              className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-travel-cloud-white rounded-full p-2 shadow-md hover:bg-gray-100 focus:outline-none z-10"
               aria-label="Next slide"
             >
               <ChevronRight size={24} className="text-travel-earth" />

@@ -69,7 +69,7 @@ const PastTrips = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {pastTrips.map((trip) => (
-              <div key={trip.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
+              <div key={trip.id} className="bg-travel-cloud-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
                 <div className="md:w-2/5 h-64 md:h-auto overflow-hidden">
                   <img 
                     src={trip.image} 
@@ -90,7 +90,7 @@ const PastTrips = () => {
                       <span>{trip.location}</span>
                     </div>
                   </div>
-                  <button className="mt-4 py-2 text-travel-teal border border-travel-teal rounded-md hover:bg-travel-teal hover:text-white transition-colors">
+                  <button className="mt-4 py-2 text-travel-teal border border-travel-teal rounded-md hover:bg-travel-teal hover:text-travel-cloud-white transition-colors">
                     View Gallery
                   </button>
                 </div>

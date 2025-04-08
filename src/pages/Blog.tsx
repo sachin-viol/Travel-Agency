@@ -136,16 +136,16 @@ const SearchBox = () => {
 
 const NewsletterSignup = () => {
   return (
-    <div className="bg-travel-teal text-white p-6 rounded-lg">
+    <div className="bg-travel-earth text-travel-cloud-white p-6 rounded-lg">
       <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
-      <p className="mb-4 text-white/80">Get travel tips and inspiration delivered to your inbox.</p>
+      <p className="mb-4 text-travel-cloud-white/80">Get travel tips and inspiration delivered to your inbox.</p>
       <div className="flex flex-col space-y-3">
         <input
           type="email"
           placeholder="Your email address"
-          className="w-full p-3 border border-white/20 bg-white/10 rounded-lg placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30"
+          className="w-full p-3 border border-travel-cloud-white/20 bg-travel-cloud-white/10 rounded-lg placeholder-travel-cloud-white/60 focus:outline-none focus:ring-2 focus:ring-travel-cloud-white/30"
         />
-        <button className="flex items-center justify-center bg-white text-travel-teal font-medium py-3 px-4 rounded-lg hover:bg-white/90 transition-colors">
+        <button className="flex items-center justify-center bg-travel-cloud-white text-travel-teal font-medium py-3 px-4 rounded-lg hover:bg-travel-cloud-white/90 transition-colors">
           <Mail size={16} className="mr-2" />
           Subscribe
         </button>
@@ -171,7 +171,7 @@ const Blog = () => {
             <div className="lg:w-2/3">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {blogPosts.map((post) => (
-                  <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                  <div key={post.id} className="bg-travel-cloud-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
                     <div className="h-48 overflow-hidden">
                       <img
                         src={post.image}
@@ -197,7 +197,7 @@ const Blog = () => {
                           <span>{post.author}</span>
                         </div>
                       </div>
-                      <button className="w-full mt-6 py-2 text-travel-teal border border-travel-teal rounded-md hover:bg-travel-teal hover:text-white transition-colors flex items-center justify-center">
+                      <button className="w-full mt-6 py-2 btn-outline transition-colors flex items-center justify-center">
                         <span>Read More</span>
                         <ArrowRight size={16} className="ml-2" />
                       </button>

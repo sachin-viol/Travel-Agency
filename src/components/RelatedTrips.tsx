@@ -21,7 +21,7 @@ const RelatedTrips = ({ currentTripSlug }: RelatedTripsProps) => {
   }));
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <h2 className="text-3xl font-bold mb-10 text-travel-earth text-center">More Adventures You'll Love</h2>
         
@@ -34,7 +34,7 @@ const RelatedTrips = ({ currentTripSlug }: RelatedTripsProps) => {
                   alt={trip.destination} 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+                <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
                   {trip.price}
                 </div>
               </div>

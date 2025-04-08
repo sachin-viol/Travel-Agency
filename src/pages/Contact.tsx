@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-16">
-            <div className="lg:col-span-2 bg-white rounded-lg shadow-md p-8">
+            <div className="lg:col-span-2 bg-travel-cloud-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold mb-6 text-travel-earth">Get In Touch</h2>
 
               <div className="space-y-6">
@@ -111,7 +111,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-3 bg-white rounded-lg shadow-md p-8">
+            <div className="lg:col-span-3 bg-travel-cloud-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold mb-6 text-travel-earth">Send a Message</h2>
 
               {isSubmitted ? (
@@ -205,7 +205,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="bg-travel-teal hover:bg-travel-earth text-white font-medium py-3 px-6 rounded-md transition-colors w-full"
+                    className="bg-travel-teal hover:bg-travel-earth text-travel-cloud-white font-medium py-3 px-6 rounded-md transition-colors w-full"
                   >
                     Send Message
                   </button>
@@ -214,7 +214,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md overflow-hidden h-96">
+          <div className="bg-travel-cloud-white rounded-lg shadow-md overflow-hidden h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580958158c0f1%3A0x5ce35a6920576254!2sSan%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus"
               width="100%"

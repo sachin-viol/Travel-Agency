@@ -23,7 +23,7 @@ const TripFAQ = ({ faqs }: TripFAQProps) => {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <AccordionItem key={index} value={`item-${index}`} className="bg-travel-cloud-white rounded-lg overflow-hidden border border-gray-200">
                 <AccordionTrigger className="px-6 py-4 text-lg font-medium text-travel-earth hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>

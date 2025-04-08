@@ -44,19 +44,19 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-travel-cloud-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Authentic Experiences</h3>
               <p className="text-gray-600">
                 We design each itinerary to immerse you in local cultures, traditions, and natural wonders that go beyond typical tourist attractions.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-travel-cloud-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Meaningful Connections</h3>
               <p className="text-gray-600">
                 Our small group trips foster friendships among travelers while creating opportunities to connect with local communities.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-travel-cloud-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-travel-earth">Responsible Travel</h3>
               <p className="text-gray-600">
                 We're committed to sustainable practices that respect local environments, support local economies, and minimize our ecological footprint.
@@ -69,7 +69,7 @@ const About = () => {
       <TeamSection />
       <CompanyValues />
 
-      <div className="py-16 bg-white">
+      <div className="py-16 bg-travel-cloud-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-8 text-travel-earth">Ready to Start Your Adventure?</h2>
           <button className="btn-primary">Explore Our Trips</button>

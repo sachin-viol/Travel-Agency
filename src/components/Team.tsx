@@ -9,7 +9,7 @@ const Team = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow">
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-travel-cloud-white">
           <div className="container-custom">            
             <TeamSection />
             

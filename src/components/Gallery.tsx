@@ -52,7 +52,7 @@
 //     <div className="min-h-screen flex flex-col">
 //       <Navbar />
 //       <div className="pt-24 flex-grow">
-//         <section className="py-12 md:py-16 bg-white">
+//         <section className="py-12 md:py-16 bg-travel-cloud-white">
 //           <div className="container-custom">
 //             <div className="text-center mb-12">
 //               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Our Travel Gallery</h1>
@@ -147,7 +147,7 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="pt-24 flex-grow">
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 md:py-16 bg-travel-cloud-white">
           <div className="container-custom">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Our Travel Gallery</h1>

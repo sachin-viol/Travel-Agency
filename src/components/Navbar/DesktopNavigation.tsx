@@ -180,7 +180,7 @@
 
 //           {/* Destinations Dropdown */}
 //           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//             <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //               Destinations
 //             </NavigationMenuTrigger>
 //             <NavigationMenuContent>
@@ -207,7 +207,7 @@
 
 //           {/* Ways to Travel Dropdown */}
 //           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//             <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //               Ways to Travel
 //             </NavigationMenuTrigger>
 //             <NavigationMenuContent>
@@ -227,7 +227,7 @@
 
 //           {/* Components (Expert Travel Advice) */}
 //           <NavigationMenuItem>
-//             <NavigationMenuTrigger className='text-white hover:text-white/8j0 bg-transparent hover:bg-white/10'>Expert Travel Advice</NavigationMenuTrigger>
+//             <NavigationMenuTrigger className='text-travel-cloud-white hover:text-travel-cloud-white/8j0 bg-transparent hover:bg-travel-cloud-white/10'>Expert Travel Advice</NavigationMenuTrigger>
 //             <NavigationMenuContent>
 //               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
 //                 {components.map((component) => (
@@ -245,7 +245,7 @@
 
 //           {/* About Us */}
 //           <NavigationMenuItem>
-//             <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//             <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //               About Us
 //             </NavigationMenuTrigger>
 //             <NavigationMenuContent>
@@ -267,9 +267,9 @@
 
 //       {/* Search and Contact */}
 //       <div className="flex items-center space-x-4 ml-auto">
-//         <div className="flex items-center text-white">
+//         <div className="flex items-center text-travel-cloud-white">
 //           <Phone size={20} className="mr-2" />
-//           <span className="font-medium whitespace-nowrap">1.888.680.1241</span>
+//           <span className="font-medium travel-cloud-whitespace-nowrap">1.888.680.1241</span>
 //         </div>
 //       </div>
 //     </div>
@@ -282,7 +282,7 @@
 
 
 // // <NavigationMenuItem>
-// //   <NavigationMenuTrigger className='text-white hover:text-white/80 bg-transparent hover:bg-white/10'>Components</NavigationMenuTrigger>
+// //   <NavigationMenuTrigger className='text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10'>Components</NavigationMenuTrigger>
 // //   <NavigationMenuContent>
 // //     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
 // //       {components.map((component) => (
@@ -377,17 +377,17 @@ const DesktopNavigation = () => {
 
         <NavigationMenuItem className='list-none'>
           <Link to="/" >
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-white hover:text-white/80 bg-transparent hover:bg-white/10`}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10`}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem className='list-none'>
-          <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">Trips</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">Trips</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-2 md:w-[200px] lg:grid-cols-1">
-              <ListItem href="/" title="Upcoming">
+              <ListItem href="/#upcoming-trips" title="Upcoming">
               </ListItem>
               <ListItem href="/" title="Ongoing">
               </ListItem>
@@ -399,7 +399,7 @@ const DesktopNavigation = () => {
 
         <NavigationMenuItem className='list-none'>
           <Link to="/blog" >
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-white hover:text-white/80 bg-transparent hover:bg-white/10`}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10`}>
               Blogs
             </NavigationMenuLink>
           </Link>
@@ -409,7 +409,7 @@ const DesktopNavigation = () => {
       <NavigationMenu>
 
         <NavigationMenuItem className='list-none'>
-          <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">Experience </NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">Experience </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-2 md:w-[200px] lg:grid-cols-1">
               <ListItem href="/" title="Reviews">
@@ -421,7 +421,7 @@ const DesktopNavigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem className='list-none'>
-          <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+          <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -443,9 +443,9 @@ const DesktopNavigation = () => {
 
       {/* Search and Contact */}
       <div className="flex items-center space-x-4 ml-auto">
-        <div className="flex items-center text-white">
+        <div className="flex items-center text-travel-cloud-white">
           <Phone size={20} className="mr-2" />
-          <span className="font-medium whitespace-nowrap">1.888.680.1241</span>
+          <span className="font-medium travel-cloud-whitespace-nowrap">1.888.680.1241</span>
         </div>
       </div>
     </div>

@@ -14,14 +14,14 @@ const GuidedTravel = () => {
             </p>
             
             <div className="relative">
-              <div className="rounded-full overflow-hidden border-8 border-white md:w-64 md:h-64 w-32 h-32 z-20 relative">
+              <div className="rounded-full overflow-hidden border-8 border-travel-cloud-white md:w-64 md:h-64 w-32 h-32 z-20 relative">
                 <img 
                   src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4" 
                   alt="Traveler with bird" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute bottom-4 right-12 rounded-full overflow-hidden border-8 border-white md:w-40 md:h-40 w-20 h-20 z-10">
+              <div className="absolute bottom-4 right-12 rounded-full overflow-hidden border-8 border-travel-cloud-white md:w-40 md:h-40 w-20 h-20 z-10">
                 <img 
                   src="https://images.unsplash.com/photo-1534008897995-27a23e859048" 
                   alt="Group travel" 

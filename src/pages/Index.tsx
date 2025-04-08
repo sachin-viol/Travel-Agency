@@ -21,7 +21,7 @@ const Index = () => {
       <Hero />
       <WhyChooseUs />
       {/* <TourCategories /> */}
-      <UpcomingTrips />
+      <UpcomingTrips id="upcoming-trips" />
       <FeatureSection />
       {/* <InternationalTrips />
       <ExploreIndia />

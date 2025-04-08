@@ -44,7 +44,7 @@
 //           alt={trip.destination}
 //           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
 //         />
-//         <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+//         <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
 //           {trip.price}
 //         </div>
 //       </div>
@@ -167,14 +167,14 @@ const tripData = [
 
 const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
   return (
-    <div className="trip-card rounded-lg overflow-hidden bg-white shadow-md">
+    <div className="trip-card rounded-lg overflow-hidden bg-travel-cloud-white shadow-md">
       <div className="relative h-64 overflow-hidden">
         <img
           src={trip.image}
           alt={trip.destination}
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
         />
-        <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+        <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
           {trip.price}
         </div>
       </div>
@@ -202,9 +202,9 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
   );
 };
 
-const UpcomingTrips = () => {
+const UpcomingTrips = ({ id }: { id?: string }) => {
   return (
-    <section className="section-padding bg-travel-sand-light/30">
+    <section id={id} className="section-padding bg-travel-slate-gray/10">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Upcoming Adventures</h2>

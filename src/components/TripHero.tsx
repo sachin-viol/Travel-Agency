@@ -18,8 +18,8 @@ const TripHero = ({ title, description, image }: TripHeroProps) => {
       
       <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
         <div className="max-w-4xl">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">{title}</h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">{description}</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-travel-cloud-white mb-6 leading-tight">{title}</h1>
+          <p className="text-lg md:text-xl text-travel-cloud-white/90 max-w-3xl mx-auto">{description}</p>
         </div>
       </div>
     </div>

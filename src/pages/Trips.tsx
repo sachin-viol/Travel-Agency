@@ -92,7 +92,7 @@ const TripCategories = () => {
   ];
 
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <h2 className="text-2xl font-bold text-travel-earth mb-10 text-center">Browse by Trip Type</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -112,13 +112,13 @@ const TripCategories = () => {
 
 const TripSearchBanner = () => {
   return (
-    <div className="py-16 bg-travel-earth text-white">
+    <div className="py-16 bg-travel-earth text-travel-cloud-white">
       <div className="container-custom text-center">
         <h2 className="text-3xl font-bold mb-6">Can't Find the Perfect Trip?</h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           Let our travel experts help you craft a personalized adventure tailored to your preferences and schedule.
         </p>
-        <Link to="/contact" className="bg-white text-travel-earth px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
+        <Link to="/contact" className="bg-travel-cloud-white text-travel-earth px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
           Contact Our Experts
         </Link>
       </div>
@@ -147,13 +147,13 @@ const Trips = () => {
 
             <div className="flex flex-wrap gap-4">
               <div className="relative">
-                <button className="flex items-center bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
+                <button className="flex items-center bg-travel-cloud-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
                   <Filter size={16} className="mr-2" />
                   <span>Filter</span>
                 </button>
               </div>
 
-              <select className="bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
+              <select className="bg-travel-cloud-white px-4 py-2 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">
                 <option>Sort by: Featured</option>
                 <option>Price: Low to High</option>
                 <option>Price: High to Low</option>
@@ -173,10 +173,10 @@ const Trips = () => {
                     alt={trip.destination}
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+                  <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
                     {trip.price}
                   </div>
-                  <div className="absolute top-4 left-4 bg-travel-terracotta text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-travel-terracotta text-travel-cloud-white px-3 py-1 rounded-full text-sm font-medium">
                     {trip.category}
                   </div>
                 </div>

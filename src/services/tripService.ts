@@ -208,7 +208,7 @@ export const tripDetails = [
       "Spot unique wildlife including sloths and toucans",
       "Relax on pristine Pacific beaches",
       "Soak in natural hot springs surrounded by jungle",
-      "White-water rafting on the Pacuare River",
+      "travel-cloud-white-water rafting on the Pacuare River",
       "Explore the cloud forest ecosystem in Monteverde",
       "Support sustainable tourism in protected areas"
     ],
@@ -255,7 +255,7 @@ export const tripDetails = [
       "Private transportation throughout",
       "Experienced naturalist guide throughout",
       "Entrance fees to all national parks",
-      "Zip-line canopy tour and white-water rafting",
+      "Zip-line canopy tour and travel-cloud-white-water rafting",
       "Hot springs visit in Arenal"
     ],
     exclusions: [

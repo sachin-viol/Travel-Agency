@@ -13,7 +13,7 @@ interface TripImageGalleryProps {
 
 const TripImageGallery = ({ images }: TripImageGalleryProps) => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <h2 className="text-3xl font-bold mb-10 text-travel-earth text-center">Trip Gallery</h2>
 

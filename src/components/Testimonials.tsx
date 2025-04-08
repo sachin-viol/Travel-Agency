@@ -79,7 +79,7 @@ const Testimonials = () => {
   }, [activeIndex]);
   
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-travel-slate-gray/10">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">What Our Travelers Say</h2>
@@ -93,13 +93,13 @@ const Testimonials = () => {
           <div className="hidden sm:flex justify-between absolute top-1/2 left-0 right-0 -translate-y-1/2 z-10 px-4">
             <button 
               onClick={prevSlide} 
-              className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-travel-earth hover:bg-travel-teal hover:text-white transition-all duration-300"
+              className="w-12 h-12 rounded-full bg-travel-cloud-white shadow-md flex items-center justify-center text-travel-earth hover:bg-travel-teal hover:text-travel-cloud-white transition-all duration-300"
             >
               <ChevronLeft size={24} />
             </button>
             <button 
               onClick={nextSlide} 
-              className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-travel-earth hover:bg-travel-teal hover:text-white transition-all duration-300"
+              className="w-12 h-12 rounded-full bg-travel-cloud-white shadow-md flex items-center justify-center text-travel-earth hover:bg-travel-teal hover:text-travel-cloud-white transition-all duration-300"
             >
               <ChevronRight size={24} />
             </button>

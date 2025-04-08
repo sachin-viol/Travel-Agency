@@ -42,7 +42,7 @@ const images = [
 
 const BestMoments = () => {
   return (
-    <section id="best-moments" className="py-16 bg-white">
+    <section id="best-moments" className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Our Best Moments</h2>
@@ -61,7 +61,7 @@ const BestMoments = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <a href="#" className="text-white">
+                <a href="#" className="text-travel-cloud-white">
                   <Instagram size={28} />
                 </a>
               </div>
@@ -78,7 +78,7 @@ const BestMoments = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <a href="#" className="text-white">
+                <a href="#" className="text-travel-cloud-white">
                   <Instagram size={28} />
                 </a>
               </div>
@@ -95,7 +95,7 @@ const BestMoments = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <a href="#" className="text-white">
+                <a href="#" className="text-travel-cloud-white">
                   <Instagram size={24} />
                 </a>
               </div>
@@ -112,7 +112,7 @@ const BestMoments = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <a href="#" className="text-white">
+                <a href="#" className="text-travel-cloud-white">
                   <Instagram size={28} />
                 </a>
               </div>
@@ -128,7 +128,7 @@ const BestMoments = () => {
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <a href="#" className="text-white">
+                <a href="#" className="text-travel-cloud-white">
                   <Instagram size={28} />
                 </a>
               </div>

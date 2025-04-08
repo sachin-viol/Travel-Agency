@@ -28,7 +28,7 @@
 //   return (
 //     <nav className={`fixed w-full z-50 transition-all duration-300  ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
 //       <div className="container-custom flex justify-between items-center">
-//         <Link to="/" className="text-2xl font-serif font-bold text-white">WANDER TRIBE</Link>
+//         <Link to="/" className="text-2xl font-serif font-bold text-travel-cloud-white">WANDER TRIBE</Link>
 
 //         {/* Desktop Navigation */}
 //         <div className="hidden md:flex items-center space-x-8">
@@ -48,7 +48,7 @@
 //             </button>
 
 //             {dropdownOpen && (
-//               <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
+//               <div className="absolute right-0 mt-2 w-48 bg-travel-cloud-white rounded-md shadow-lg py-2 z-50">
 //                 <Link to="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-travel-teal-light/10 hover:text-travel-teal">FAQ</Link>
 //                 <Link to="/gallery" className="block px-4 py-2 text-sm text-gray-700 hover:bg-travel-teal-light/10 hover:text-travel-teal">Gallery</Link>
 //                 <Link to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-travel-teal-light/10 hover:text-travel-teal">Our Team</Link>
@@ -59,7 +59,7 @@
 
 //         {/* Mobile Navigation Toggle */}
 //         <button
-//           className="md:hidden text-white focus:outline-none"
+//           className="md:hidden text-travel-cloud-white focus:outline-none"
 //           onClick={() => setIsOpen(!isOpen)}
 //         >
 //           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -121,7 +121,7 @@
 //   return (
 //     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-travel-earth py-4'}`}>
 //       <div className="container-custom flex justify-between items-center">
-//         <Link to="/" className="text-2xl font-serif font-bold text-white">WANDERLUX</Link>
+//         <Link to="/" className="text-2xl font-serif font-bold text-travel-cloud-white">WANDERLUX</Link>
 
 //         {/* Desktop Navigation */}
 //         <div className="hidden md:flex items-center">
@@ -129,10 +129,10 @@
 //             <NavigationMenuList className="space-x-2">
 //               {/* Destinations Dropdown */}
 //               <NavigationMenuItem>
-//                 <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//                 <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //                   Destinations
 //                 </NavigationMenuTrigger>
-//                 <NavigationMenuContent className="bg-white rounded-md shadow-lg p-4">
+//                 <NavigationMenuContent className="bg-travel-cloud-white rounded-md shadow-lg p-4">
 //                   <div className="grid grid-cols-3 gap-4">
 //                     <div>
 //                       <h3 className="font-bold text-lg mb-3 text-travel-earth">Regions</h3>
@@ -183,7 +183,7 @@
 //                     </div>
 //                   </div>
 //                   <div className="mt-6 text-center">
-//                     <Link to="/trips" className="bg-travel-teal text-white px-6 py-2 rounded-md hover:bg-travel-earth transition-all duration-300">
+//                     <Link to="/trips" className="bg-travel-teal text-travel-cloud-white px-6 py-2 rounded-md hover:bg-travel-earth transition-all duration-300">
 //                       Browse All Trips
 //                     </Link>
 //                   </div>
@@ -192,10 +192,10 @@
 
 //               {/* Ways to Travel Dropdown */}
 //               <NavigationMenuItem>
-//                 <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//                 <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //                   Ways to Travel
 //                 </NavigationMenuTrigger>
-//                 <NavigationMenuContent className="bg-white rounded-md shadow-lg p-6 w-[800px]">
+//                 <NavigationMenuContent className="bg-travel-cloud-white rounded-md shadow-lg p-6 w-[800px]">
 //                   <div className="grid grid-cols-4 gap-6">
 //                     <div>
 //                       <h3 className="font-bold text-lg mb-3 text-travel-earth">Tour Styles</h3>
@@ -277,10 +277,10 @@
 
 //               {/* Expert Travel Advice */}
 //               <NavigationMenuItem>
-//                 <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//                 <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //                   Expert Travel Advice
 //                 </NavigationMenuTrigger>
-//                 <NavigationMenuContent className="bg-white rounded-md shadow-lg p-4 w-[400px]">
+//                 <NavigationMenuContent className="bg-travel-cloud-white rounded-md shadow-lg p-4 w-[400px]">
 //                   <ul className="space-y-2">
 //                     <li><Link to="/blog" className="text-gray-700 hover:text-travel-teal">Travel Blog</Link></li>
 //                     <li><Link to="/travel-tips" className="text-gray-700 hover:text-travel-teal">Travel Tips & Guides</Link></li>
@@ -293,10 +293,10 @@
 
 //               {/* About Us */}
 //               <NavigationMenuItem>
-//                 <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
+//                 <NavigationMenuTrigger className="text-travel-cloud-white hover:text-travel-cloud-white/80 bg-transparent hover:bg-travel-cloud-white/10">
 //                   About Us
 //                 </NavigationMenuTrigger>
-//                 <NavigationMenuContent className="bg-white rounded-md shadow-lg p-4 w-[400px]">
+//                 <NavigationMenuContent className="bg-travel-cloud-white rounded-md shadow-lg p-4 w-[400px]">
 //                   <ul className="space-y-2">
 //                     <li><Link to="/about" className="text-gray-700 hover:text-travel-teal">Our Story</Link></li>
 //                     <li><Link to="/team" className="text-gray-700 hover:text-travel-teal">Meet Our Team</Link></li>
@@ -311,10 +311,10 @@
 
 //           {/* Search and Contact */}
 //           <div className="flex items-center space-x-4">
-//             <button className="text-white hover:text-white/80">
+//             <button className="text-travel-cloud-white hover:text-travel-cloud-white/80">
 //               <Search size={20} />
 //             </button>
-//             <div className="flex items-center text-white">
+//             <div className="flex items-center text-travel-cloud-white">
 //               <Phone size={20} className="mr-2" />
 //               <span className="font-medium">1.888.680.1241</span>
 //             </div>
@@ -323,7 +323,7 @@
 
 //         {/* Mobile Navigation Toggle */}
 //         <button
-//           className="md:hidden text-white focus:outline-none"
+//           className="md:hidden text-travel-cloud-white focus:outline-none"
 //           onClick={() => setIsOpen(!isOpen)}
 //         >
 //           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -334,31 +334,31 @@
 //       {isOpen && (
 //         <div className="md:hidden bg-travel-earth absolute top-full left-0 w-full shadow-md">
 //           <div className="container-custom py-4 flex flex-col space-y-4">
-//             <div className="border-b border-white/20 pb-3">
-//               <button className="text-white flex items-center justify-between w-full">
+//             <div className="border-b border-travel-cloud-white/20 pb-3">
+//               <button className="text-travel-cloud-white flex items-center justify-between w-full">
 //                 <span className="text-lg">Destinations</span>
 //                 <ChevronDown size={18} />
 //               </button>
 //             </div>
-//             <div className="border-b border-white/20 pb-3">
-//               <button className="text-white flex items-center justify-between w-full">
+//             <div className="border-b border-travel-cloud-white/20 pb-3">
+//               <button className="text-travel-cloud-white flex items-center justify-between w-full">
 //                 <span className="text-lg">Ways to Travel</span>
 //                 <ChevronDown size={18} />
 //               </button>
 //             </div>
-//             <div className="border-b border-white/20 pb-3">
-//               <button className="text-white flex items-center justify-between w-full">
+//             <div className="border-b border-travel-cloud-white/20 pb-3">
+//               <button className="text-travel-cloud-white flex items-center justify-between w-full">
 //                 <span className="text-lg">Expert Travel Advice</span>
 //                 <ChevronDown size={18} />
 //               </button>
 //             </div>
-//             <div className="border-b border-white/20 pb-3">
-//               <button className="text-white flex items-center justify-between w-full">
+//             <div className="border-b border-travel-cloud-white/20 pb-3">
+//               <button className="text-travel-cloud-white flex items-center justify-between w-full">
 //                 <span className="text-lg">About Us</span>
 //                 <ChevronDown size={18} />
 //               </button>
 //             </div>
-//             <div className="flex items-center text-white mt-4">
+//             <div className="flex items-center text-travel-cloud-white mt-4">
 //               <Phone size={20} className="mr-2" />
 //               <span className="font-medium">1.888.680.1241</span>
 //             </div>
@@ -423,7 +423,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-travel-earth py-4'}`}>
       <div className="container-custom flex justify-evenly items-center">
         <div className='flex items-center space-x-4 w-full'>
-          <Link to="/" className="text-2xl font-bold text-white">WANDER TRIBE</Link>
+          <Link to="/" className="text-2xl font-bold text-travel-cloud-white">WANDER TRIBE</Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -432,7 +432,7 @@ const Navbar = () => {
         {/* Mobile Navigation Toggle */}
         <div className="md:hidden flex items-center space-x-4">
           <button
-            className="text-white focus:outline-none"
+            className="text-travel-cloud-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-label="Toggle navigation menu"

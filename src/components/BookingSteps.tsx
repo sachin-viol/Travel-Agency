@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const BookingSteps = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-slate-gray/10">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left column - Booking Steps */}
@@ -133,7 +133,7 @@ const BookingSteps = () => {
             </Accordion>
             
             <div className="mt-8 text-center">
-              <button className="bg-travel-earth hover:bg-travel-earth/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300">
+              <button className="bg-travel-earth hover:bg-travel-earth/90 text-travel-cloud-white font-medium py-3 px-8 rounded-md transition-all duration-300">
                 Book Now
               </button>
             </div>

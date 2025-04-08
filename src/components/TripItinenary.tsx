@@ -28,7 +28,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <Tabs defaultValue="itinerary">
           <div className="mb-8 border-b border-gray-200">
@@ -72,7 +72,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
                 >
                   <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 transition-colors">
                     <div className="flex items-center">
-                      <div className="bg-travel-terracotta text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                      <div className="bg-travel-terracotta text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
                         <MapPin className="w-6 h-6" />
                       </div>
                       <div className="text-left">
@@ -101,7 +101,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
               <div>
                 <div className="mb-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-travel-teal text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-travel-teal text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                       <Building className="w-6 h-6" />
                     </div>
                     <div>
@@ -114,7 +114,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
 
                 <div className="mb-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-travel-teal text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-travel-teal text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                       <Utensils className="w-6 h-6" />
                     </div>
                     <div>
@@ -127,7 +127,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
 
                 <div className="mb-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-travel-teal text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-travel-teal text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                       <BusIcon className="w-6 h-6" />
                     </div>
                     <div>
@@ -141,7 +141,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
               <div>
                 <div className="mb-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-travel-teal text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-travel-teal text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                       <Ticket className="w-6 h-6" />
                     </div>
                     <div>
@@ -157,7 +157,7 @@ const TripItinerary = ({ itinerary, inclusions, exclusions }: TripItineraryProps
 
                 <div className="mb-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-travel-teal text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-travel-teal text-travel-cloud-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
                       <Bus className="w-6 h-6" />
                     </div>
                     <div>
