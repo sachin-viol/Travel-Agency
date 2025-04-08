@@ -404,6 +404,9 @@ const DesktopNavigation = () => {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+      </NavigationMenu>
+
+      <NavigationMenu>
 
         <NavigationMenuItem className='list-none'>
           <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">Experience </NavigationMenuTrigger>
@@ -417,12 +420,12 @@ const DesktopNavigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem  className='list-none'>
+        <NavigationMenuItem className='list-none'>
           <NavigationMenuTrigger className="text-white hover:text-white/80 bg-transparent hover:bg-white/10">
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[200px] md:grid-cols-2 lg:w-[300px]">
+            <ul className="grid w-[400px] gap-3 p-3 md:w-[200px] md:grid-cols-1 lg:w-[300px]">
               {aboutUs.map((item) => (
                 <ListItem
                   key={item.title}

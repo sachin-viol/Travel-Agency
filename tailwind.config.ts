@@ -69,6 +69,7 @@ module.exports = {
           "sand-light": "#F9DBBD",
           earth: "#09493c",
           "earth-light": "#557B83",
+          //new colors
           "sky-blue": "#87CEEB",
           "sunflower-yellow": "#FFC300",
           "poppy-red": "#FF5733",
