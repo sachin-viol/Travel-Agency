@@ -57,7 +57,7 @@ const PastTrips = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-24 pb-16">
+      <div className="pt-24 pb-16 bg-travel-cloud-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth">Past Adventures</h1>
@@ -98,8 +98,8 @@ const PastTrips = () => {
             ))}
           </div>
           
-          <div className="mt-12 text-center">
-            <p className="text-lg text-gray-600 mb-6">
+          <div className="mt-16 text-center ">
+            <p className="text-lg text-travel-slate-gray mb-6">
               Don't miss out on our upcoming adventures. Join us for your next unforgettable journey!
             </p>
             <button className="btn-primary">View Upcoming Trips</button>

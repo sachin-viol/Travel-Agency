@@ -11,10 +11,10 @@ import PastTrips from "./pages/PastTrips";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import TripDetail from "./pages/TripDetail";
-import TeamSection from "./components/TeamSection";
 import FAQ from "./components/FAQ";
 import Gallery from "./components/Gallery";
 import Team from "./components/Team";
+import Careers from "./pages/Careers";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +32,7 @@ const App = () => (
           <Route path="/past-trips" element={<PastTrips />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />          <Route path="/trip/:slug" element={<TripDetail />} />
           <Route path="*" element={<NotFound />} />

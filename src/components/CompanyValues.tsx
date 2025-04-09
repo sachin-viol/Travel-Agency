@@ -41,7 +41,7 @@ const CompanyValues = () => {
   };
   
   return (
-    <section className="py-16 bg-travel-sand-light/20">
+    <section className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-travel-earth">

@@ -365,6 +365,11 @@ const DesktopNavigation = () => {
       description: "Find answers to commonly asked questions about our tours and services.",
     },
     {
+      title: "Careers",
+      href: "/careers",
+      description: "Reach out to our team for personalized assistance with your travel plans.",
+    },
+    {
       title: "Contact Us",
       href: "/contact",
       description: "Reach out to our team for personalized assistance with your travel plans.",
