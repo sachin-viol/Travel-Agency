@@ -150,7 +150,7 @@ const TripCard = ({ trip }: { trip: typeof upcomingTrips[0] }) => {
           alt={trip.destination} 
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
         />
-        <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+        <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
           {trip.price}
         </div>
       </div>
@@ -182,7 +182,7 @@ const FeaturedTours = () => {
   const [activeTab, setActiveTab] = useState("upcoming");
 
   return (
-    <section className="py-16 bg-travel-cloud-white">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Featured Tours</h2>
@@ -193,30 +193,29 @@ const FeaturedTours = () => {
         </div>
         
         <Tabs defaultValue="upcoming" value={activeTab} onValueChange={setActiveTab} className="w-full">
-          {/* Updated TabsList for better responsiveness */}
-          <div className="flex justify-center mb-10 overflow-x-auto scrollbar-hide">
-            <TabsList className="bg-transparent border-b border-gray-200 w-full flex flex-nowrap justify-start sm:justify-center space-x-2 sm:space-x-4 md:space-x-8 px-4">
+          <div className="flex justify-center mb-10">
+            <TabsList className="bg-transparent border-b border-gray-200 w-full flex justify-center space-x-8">
               <TabsTrigger 
                 value="upcoming" 
-                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 travel-cloud-whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 Upcoming Adventures
               </TabsTrigger>
               <TabsTrigger 
                 value="popular" 
-                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 travel-cloud-whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 Popular
               </TabsTrigger>
               <TabsTrigger 
                 value="international" 
-                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 travel-cloud-whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 International
               </TabsTrigger>
               <TabsTrigger 
                 value="india" 
-                className="text-sm sm:text-base md:text-lg font-medium py-2 px-2 sm:px-4 travel-cloud-whitespace-nowrap border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
+                className="text-lg font-medium py-2 px-4 border-b-2 border-transparent data-[state=active]:border-travel-teal data-[state=active]:text-travel-teal"
               >
                 India
               </TabsTrigger>
@@ -256,8 +255,8 @@ const FeaturedTours = () => {
           </TabsContent>
         </Tabs>
         
-        <div className="text-center mt-12 w-1/3 mx-auto">
-          <Link to="/trips" className="btn-primary flex items-center justify-center ">
+        <div className="text-center mt-12">
+          <Link to="/trips" className="btn-primary flex items-center justify-center mx-auto w-auto">
             Browse All Trips
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
