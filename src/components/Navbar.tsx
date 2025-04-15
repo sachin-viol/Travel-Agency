@@ -423,7 +423,9 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-travel-earth/95 shadow-md py-2' : 'bg-travel-earth py-4'}`}>
       <div className="container-custom flex justify-evenly items-center">
         <div className='flex items-center space-x-4 w-full'>
-          <Link to="/" className="text-2xl font-bold text-travel-cloud-white">WANDER TRIBE</Link>
+          <Link to="/" className="text-2xl font-bold text-travel-cloud-white">WANDER TRIBE
+          {/* <img src="/unnamed.ico" alt="Logo" className='w-16' /> */}
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

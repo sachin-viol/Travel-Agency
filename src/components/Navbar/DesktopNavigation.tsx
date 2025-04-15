@@ -355,19 +355,14 @@ const DesktopNavigation = () => {
       description: "Get to know our travel experts who curate exceptional journeys.",
     },
     {
-      title: "Gallery",
-      href: "/gallery",
-      description: "View stunning photos from our tours around the world.",
+      title: "Careers",
+      href: "/careers",
+      description: "Reach out to our team for personalized assistance with your travel plans.",
     },
     {
       title: "FAQs",
       href: "/faq",
       description: "Find answers to commonly asked questions about our tours and services.",
-    },
-    {
-      title: "Careers",
-      href: "/careers",
-      description: "Reach out to our team for personalized assistance with your travel plans.",
     },
     {
       title: "Contact Us",
@@ -419,7 +414,7 @@ const DesktopNavigation = () => {
             <ul className="grid gap-3 p-2 md:w-[200px] lg:grid-cols-1">
               <ListItem href="/" title="Reviews">
               </ListItem>
-              <ListItem href="/" title="Smile Please">
+              <ListItem href="/gallery" title="Gallery">
               </ListItem>
             </ul>
           </NavigationMenuContent>

@@ -98,7 +98,7 @@ const WhyChooseUs = () => {
             </div>
             <h3 className="text-xl font-bold mb-4 text-center">Experience & Expertise</h3>
             <p className="text-center">
-              We've been doing this for a long time. Since 2010, in fact. WANDERLUX is the most experienced
+              We've been doing this for a long time. Since 2010, in fact. WANDERL TRIBE is the most experienced
               and longest-running tour operator in the adventure travel industry. You choose us for our expertise.
             </p>
           </div>

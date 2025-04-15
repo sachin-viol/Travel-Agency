@@ -34,7 +34,7 @@ const GuidedTravel = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="animate-fade-in">
             <span className="text-travel-terracotta font-semibold uppercase tracking-wider">Why travel with us</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-travel-earth">Why Guided Travel by WANDERLUX</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-travel-earth">Why Guided Travel by WANDER TRIBE</h2>
             <div className="w-20 h-1 bg-travel-teal mb-6"></div>
             <p className="text-lg mb-8 text-gray-700">
               You're a traveler with places to go. We'll take care of the details. You

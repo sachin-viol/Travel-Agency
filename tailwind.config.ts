@@ -151,8 +151,8 @@ module.exports = {
         'dash': "dash 20s linear infinite",
       },
       fontFamily: {
-        serif: ["Lexend", "serif"],
-        sans: ["Inter", "sans-serif"],
+        serif: ["Camar", "serif"],
+        sans: ["Camar", "sans-serif"],
       },
     },
   },

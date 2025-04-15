@@ -20,12 +20,13 @@ const Hero = () => {
         playsInline
         className="absolute w-full h-full object-cover top-7"
       >
-        <source src="/WanderTribeHero.mp4" type="video/mp4" />
+        {/* <source src="/WanderTribeHero.mp4" type="video/mp4" /> */}
+        <source src="https://videos.pexels.com/video-files/5192722/5192722-uhd_2560_1440_24fps.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/10 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-black/10 to-black/5 z-10"></div>
 
       {/* Content */}
       <div className="container-custom h-full flex flex-col justify-center items-center text-center">

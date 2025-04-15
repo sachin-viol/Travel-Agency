@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-serif font-bold mb-4 relative">
-              WANDER TRIBE
-              <span className="block absolute -bottom-1 left-0 w-16 h-1 bg-travel-terracotta"></span>
+            <h3 className="text-2xl font-serif font-bold mb-4 relative pr-6">
+            <img src="/unnamed.ico" alt="Logo" className='w-16 w-1/2 mx-auto ' />
+              {/* <span className="block absolute -bottom-1 left-0 w-16 h-1 bg-travel-terracotta"></span> */}
             </h3>
             <p className="text-white/80 mb-6">
               Creating unforgettable journeys and meaningful connections for adventurous souls since 2010.
