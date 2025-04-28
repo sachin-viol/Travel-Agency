@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
+import PageHero from '@/components/PageHero';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,13 +43,18 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-24 pb-16">
+      <PageHero
+        title="Contact US"
+        description="Have questions or ready to book your next adventure? Get in touch with our travel experts.
+              We're here to help you plan the journey of a lifetime.
+"
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      />
+      <div className="py-16">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth"></h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Have questions or ready to book your next adventure? Get in touch with our travel experts.
-              We're here to help you plan the journey of a lifetime.
             </p>
           </div>
 

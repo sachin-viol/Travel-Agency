@@ -6,17 +6,19 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Briefcase, Award, Users, Heart, MapPin, Star, Coffee, Clock } from 'lucide-react';
+import PageHero from '@/components/PageHero';
 
 const Careers = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className='pt-[72px]'/>
-      <TripHero
-        title="Join Our Team"
-        description="Build a career with passion and purpose. Explore opportunities to be part of our growing travel family."
-        image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      <PageHero 
+        title="Careers"
+        description="Learn about our story, mission, and the passionate team behind WANDER TRIBE"
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
       />
+      <div className="py-16">
+
 
       {/* Our Values */}
       <section className="py-16 bg-white">
@@ -26,7 +28,7 @@ const Careers = () => {
               Our Team Values
             </h2>
             <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
-              At WANDERLUX, we're committed to building an environment where passionate individuals can thrive while creating unforgettable travel experiences.
+              At WANDER TRIBE, we're committed to building an environment where passionate individuals can thrive while creating unforgettable travel experiences.
             </p>
           </div>
 
@@ -142,12 +144,12 @@ const Careers = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 text-travel-earth">Open to Future Possibilities?</h3>
                   <p className="mb-6 text-travel-earth-light">
-                    Send us your resume and a cover letter explaining why you'd be a perfect addition to our WANDERLUX family. We'll keep your information on file and reach out when a suitable position becomes available.
+                    Send us your resume and a cover letter explaining why you'd be a perfect addition to our WANDER TRIBE family. We'll keep your information on file and reach out when a suitable position becomes available.
                   </p>
 
                   <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
                     <p className="text-center font-medium text-travel-earth">
-                      Send your application to: <span className="text-travel-terracotta">careers@wanderlux.com</span>
+                      Send your application to: <span className="text-travel-terracotta">careers@wanderTRIBE.com</span>
                     </p>
                   </div>
 
@@ -160,7 +162,7 @@ const Careers = () => {
                       </li>
                       <li className="flex items-start">
                         <span className="text-travel-terracotta mr-2">•</span>
-                        A cover letter explaining your passion for travel and why you want to join WANDERLUX
+                        A cover letter explaining your passion for travel and why you want to join WANDER TRIBE
                       </li>
                       <li className="flex items-start">
                         <span className="text-travel-terracotta mr-2">•</span>
@@ -187,7 +189,7 @@ const Careers = () => {
               Voices from Our Team
             </h2>
             <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
-              Hear from the people who make WANDERLUX an amazing place to work.
+              Hear from the people who make WANDER TRIBE an amazing place to work.
             </p>
           </div>
 
@@ -202,7 +204,7 @@ const Careers = () => {
                   <Badge className="bg-travel-teal text-white">Leadership</Badge>
                 </div>
                 <p className="text-travel-earth-light italic">
-                  "Working at WANDERLUX has given me the opportunity to combine my organizational skills with my passion for travel. Every day brings new challenges and adventures, and I love being able to create memorable experiences for our clients."
+                  "Working at WANDER TRIBE has given me the opportunity to combine my organizational skills with my passion for travel. Every day brings new challenges and adventures, and I love being able to create memorable experiences for our clients."
                 </p>
               </CardContent>
             </Card>
@@ -217,7 +219,7 @@ const Careers = () => {
                   <Badge className="bg-travel-sand text-travel-earth">Expert</Badge>
                 </div>
                 <p className="text-travel-earth-light italic">
-                  "The collaborative environment at WANDERLUX allows me to continuously grow my expertise. I've been able to explore new destinations, expand my knowledge, and work with an incredible team that feels like family."
+                  "The collaborative environment at WANDER TRIBE allows me to continuously grow my expertise. I've been able to explore new destinations, expand my knowledge, and work with an incredible team that feels like family."
                 </p>
               </CardContent>
             </Card>
@@ -234,7 +236,7 @@ const Careers = () => {
                 Grow Your Career With Us
               </h2>
               <p className="text-lg text-travel-earth-light mb-6">
-                At WANDERLUX, we believe in investing in our team members' growth and development. We provide opportunities to expand your skills, knowledge, and career path.
+                At WANDER TRIBE, we believe in investing in our team members' growth and development. We provide opportunities to expand your skills, knowledge, and career path.
               </p>
 
               <div className="space-y-4">
@@ -307,6 +309,7 @@ const Careers = () => {
       </section>
 
       <Footer />
+    </div>
     </div>
   );
 };

@@ -42,10 +42,10 @@ const images = [
 
 const BestMoments = () => {
   return (
-    <section id="best-moments" className="py-16 bg-travel-cloud-white">
+    <section id="best-moments" className="py-16 bg-travel-earth/10">
       <div className="container-custom">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Our Best Moments</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Our Best Moments</h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             When you go, capture all those incredible moments, and use the hashtag
             #WANDERTRIBETravel so that we can share your joy!

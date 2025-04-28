@@ -2,10 +2,10 @@ import { Shield, Award, Heart } from 'lucide-react';
 
 const CompanyIntroduction = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Introduction to Company</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Introduction to Company</h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             We believe in transformative travel experiences. Our mission is to create journeys that inspire, 
             educate, and connect people to the world in meaningful ways.

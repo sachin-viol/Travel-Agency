@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, MapPin } from 'lucide-react';
+import PageHero from '@/components/PageHero';
 
 const pastTrips = [
   {
@@ -57,23 +58,28 @@ const PastTrips = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-24 pb-16 bg-travel-cloud-white">
+      <PageHero
+        title="Past Adventures"
+        description="Take a look at our previous journeys filled with incredible memories, breathtaking locations,
+            and new friendships formed along the way."
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      />
+      <div className="py-16">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth">Past Adventures</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth"></h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Take a look at our previous journeys filled with incredible memories, breathtaking locations,
-              and new friendships formed along the way.
+
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {pastTrips.map((trip) => (
               <div key={trip.id} className="bg-travel-cloud-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
                 <div className="md:w-2/5 h-64 md:h-auto overflow-hidden">
-                  <img 
-                    src={trip.image} 
-                    alt={trip.title} 
+                  <img
+                    src={trip.image}
+                    alt={trip.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                 </div>
@@ -97,7 +103,7 @@ const PastTrips = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 text-center ">
             <p className="text-lg text-travel-slate-gray mb-6">
               Don't miss out on our upcoming adventures. Join us for your next unforgettable journey!

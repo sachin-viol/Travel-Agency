@@ -44,12 +44,12 @@
 //           alt={trip.destination}
 //           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
 //         />
-//         <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+//         <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth-light">
 //           {trip.price}
 //         </div>
 //       </div>
 //       <div className="p-6">
-//         <h3 className="text-2xl font-bold mb-2 text-travel-earth">{trip.destination}</h3>
+//         <h3 className="text-2xl font-bold mb-2 text-travel-earth-light">{trip.destination}</h3>
 //         <p className="text-sm text-gray-500 flex items-center mb-4">
 //           <MapPin size={16} className="mr-1" />
 //           {trip.breakdown}
@@ -77,7 +77,7 @@
 //     <section className="section-padding bg-travel-sand-light/30">
 //       <div className="container-custom">
 //         <div className="text-center mb-16">
-//           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Upcoming Adventures</h2>
+//           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Upcoming Adventures</h2>
 //           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
 //             Handcrafted itineraries designed to immerse you in extraordinary destinations.
 //             Book your next adventure today.
@@ -174,12 +174,12 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
           alt={trip.destination}
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
         />
-        <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+        <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth-light">
           {trip.price}
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-2 text-travel-earth">{trip.destination}</h3>
+        <h3 className="text-2xl font-bold mb-2 text-travel-earth-light">{trip.destination}</h3>
         <p className="text-sm text-gray-500 flex items-center mb-4">
           <MapPin size={16} className="mr-1" />
           {trip.breakdown}
@@ -204,10 +204,10 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
 
 const UpcomingTrips = ({ id }: { id?: string }) => {
   return (
-    <section id={id} className="section-padding bg-travel-slate-gray/10">
+    <section id={id} className="section-padding bg-travel-earth/10">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">Upcoming Adventures</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Upcoming Adventures</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Handcrafted itineraries designed to immerse you in extraordinary destinations.
             Book your next adventure today.

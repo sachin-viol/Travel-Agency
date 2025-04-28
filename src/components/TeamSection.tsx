@@ -67,11 +67,12 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="py-16 bg-travel-slate-gray/10">
+    <section className="py">
+      
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-travel-earth">Meet Our Team</h2>
-          <p className="text-xl text-gray-600">The ideal set of extraordinary people</p>
+          {/* <h2 className="text-4xl font-bold mb-4 text-travel-earth-light">Meet Our Team</h2>
+          <p className="text-xl text-gray-600">The ideal set of extraordinary people</p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
@@ -85,14 +86,14 @@ const TeamSection = () => {
                 />
               </div>
 
-              <h3 className="text-2xl font-bold text-travel-earth mb-1">{member.name}</h3>
+              <h3 className="text-2xl font-bold text-travel-earth-light mb-1">{member.name}</h3>
               <p className="text-xl text-gray-600 mb-3">{member.position}</p>
 
               <div className="flex space-x-3 mb-4">
-                <a href={member.social.linkedin} className="text-travel-teal hover:text-travel-earth transition-colors">
+                <a href={member.social.linkedin} className="text-travel-teal hover:text-travel-earth-light transition-colors">
                   <Linkedin />
                 </a>
-                <a href={member.social.instagram} className="text-travel-teal hover:text-travel-earth transition-colors">
+                <a href={member.social.instagram} className="text-travel-teal hover:text-travel-earth-light transition-colors">
                   <Instagram />
                 </a>
               </div>

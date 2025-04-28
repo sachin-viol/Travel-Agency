@@ -18,9 +18,9 @@ const GuidedTravel = () => {
         style={{ animationDelay: `${delay}ms` }}
       >
         <div className="absolute -left-8 top-0">
-          <div className="w-6 h-6 bg-travel-teal rounded-full animate-pulse"></div>
+          <div className="w-6 h-6 bg-travel-earth-light rounded-full animate-pulse"></div>
         </div>
-        <h3 className="text-xl font-bold mb-3 text-travel-earth">{title}</h3>
+        <h3 className="text-xl font-bold mb-3 text-travel-earth-light">{title}</h3>
         <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
           {description}
         </p>
@@ -29,12 +29,12 @@ const GuidedTravel = () => {
   };
   
   return (
-    <section className="py-16 bg-gradient-to-b from-sky-50 to-white">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="animate-fade-in">
             <span className="text-travel-terracotta font-semibold uppercase tracking-wider">Why travel with us</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-travel-earth">Why Guided Travel by WANDER TRIBE</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-travel-earth-light">Why Guided Travel by WANDER TRIBE</h2>
             <div className="w-20 h-1 bg-travel-teal mb-6"></div>
             <p className="text-lg mb-8 text-gray-700">
               You're a traveler with places to go. We'll take care of the details. You
@@ -83,7 +83,7 @@ const GuidedTravel = () => {
               <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
                 <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-travel-earth">Social Connections</h3>
+              <h3 className="text-xl font-bold mb-3 text-travel-earth-light">Social Connections</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
                 Meet a group of people who share your love of travel. Learn from
                 locals. Forge friendships in the coolest places.
@@ -94,7 +94,7 @@ const GuidedTravel = () => {
               <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
                 <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-travel-earth">Independence</h3>
+              <h3 className="text-xl font-bold mb-3 text-travel-earth-light">Independence</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
                 There's plenty of time built into our itineraries, plus optional tours, Choice on
                 Tour excursions, and more. It's your trip, your way.
@@ -105,7 +105,7 @@ const GuidedTravel = () => {
               <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
                 <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-travel-earth">Expertly Planned</h3>
+              <h3 className="text-xl font-bold mb-3 text-travel-earth-light">Expertly Planned</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
                 You know what you want to see and do - let a team of experts handle
                 all the details from the must-sees to centrally-located
@@ -117,7 +117,7 @@ const GuidedTravel = () => {
               <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
                 <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-travel-earth">The Best Pacing</h3>
+              <h3 className="text-xl font-bold mb-3 text-travel-earth-light">The Best Pacing</h3>
               <p className="text-gray-700 pl-4 border-l-2 border-gray-200">
                 Don't rush – this is your time to see the world. Get more time in the destination,
                 and enjoy an ideal balance of included excursions and free time.

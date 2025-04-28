@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, User, Search, Bookmark, ArrowRight, Mail } from 'lucide-react';
+import PageHero from '@/components/PageHero';
 
 const blogPosts = [
   {
@@ -71,7 +72,7 @@ const BlogCategories = () => {
 
   return (
     <div className="bg-gray-50 p-6 rounded-lg mb-8">
-      <h3 className="text-xl font-bold mb-4 text-travel-earth">Categories</h3>
+      <h3 className="text-xl font-bold mb-4 text-travel-earth-light">Categories</h3>
       <div className="space-y-2">
         {categories.map((category) => (
           <div key={category.name} className="flex justify-between items-center group cursor-pointer">
@@ -79,7 +80,7 @@ const BlogCategories = () => {
               <ArrowRight size={16} className="mr-2 text-travel-teal opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="text-gray-700 group-hover:text-travel-teal transition-colors">{category.name}</span>
             </div>
-            <span className="bg-travel-sand-light/50 text-travel-earth px-2 py-1 rounded-full text-xs">
+            <span className="bg-travel-sand-light/50 text-travel-earth-light px-2 py-1 rounded-full text-xs">
               {category.count}
             </span>
           </div>
@@ -94,7 +95,7 @@ const PopularPosts = () => {
 
   return (
     <div className="bg-gray-50 p-6 rounded-lg mb-8">
-      <h3 className="text-xl font-bold mb-4 text-travel-earth">Popular Posts</h3>
+      <h3 className="text-xl font-bold mb-4 text-travel-earth-light">Popular Posts</h3>
       <div className="space-y-4">
         {popularPosts.map((post) => (
           <div key={post.id} className="flex items-start space-x-3 group cursor-pointer">
@@ -121,7 +122,7 @@ const PopularPosts = () => {
 const SearchBox = () => {
   return (
     <div className="bg-gray-50 p-6 rounded-lg mb-8">
-      <h3 className="text-xl font-bold mb-4 text-travel-earth">Search</h3>
+      <h3 className="text-xl font-bold mb-4 text-travel-earth-light">Search</h3>
       <div className="relative">
         <input
           type="text"
@@ -156,14 +157,19 @@ const NewsletterSignup = () => {
 
 const Blog = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <Navbar />
-      <div className="pt-24 pb-16">
+      <PageHero
+        title="Blogs"
+        description="Stories, tips, and inspiration to fuel your wanderlust and enhance your travel experiences."
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      />
+      <div className="py-16">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth">Travel Blog</h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Stories, tips, and inspiration to fuel your wanderlust and enhance your travel experiences.
+          <div className="relative text-center mb-16 ">
+            {/* Decorative background element */}
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth-light relative z-10">Travel Blog</h1>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto relative z-10">
             </p>
           </div>
 
@@ -185,7 +191,7 @@ const Blog = () => {
                           {post.category}
                         </span>
                       </div>
-                      <h3 className="text-xl font-bold mb-2 text-travel-earth">{post.title}</h3>
+                      <h3 className="text-xl font-bold mb-2 text-travel-earth-light">{post.title}</h3>
                       <p className="text-gray-600 mb-4">{post.excerpt}</p>
                       <div className="flex justify-between items-center text-sm text-gray-500">
                         <div className="flex items-center">

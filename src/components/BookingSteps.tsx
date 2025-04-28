@@ -4,12 +4,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const BookingSteps = () => {
   return (
-    <section className="py-16 bg-travel-slate-gray/10">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left column - Booking Steps */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-travel-earth">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-travel-earth-light">
               Book Your Next Adventure Trip In 3 Steps
             </h2>
             
@@ -17,10 +17,10 @@ const BookingSteps = () => {
               {/* Step 1 */}
               <div className="flex gap-6">
                 <div className="h-16 w-16 flex-shrink-0 rounded-full border-2 border-travel-earth flex items-center justify-center">
-                  <FormInput size={32} className="text-travel-earth" />
+                  <FormInput size={32} className="text-travel-earth-light" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-travel-earth">
+                  <h3 className="text-xl font-semibold mb-2 text-travel-earth-light">
                     Pick your trip and fill in the booking form
                   </h3>
                   <p className="text-wander-slate-gray">
@@ -32,10 +32,10 @@ const BookingSteps = () => {
               {/* Step 2 */}
               <div className="flex gap-6">
                 <div className="h-16 w-16 flex-shrink-0 rounded-full border-2 border-travel-earth flex items-center justify-center">
-                  <CreditCard size={32} className="text-travel-earth" />
+                  <CreditCard size={32} className="text-travel-earth-light" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-travel-earth">
+                  <h3 className="text-xl font-semibold mb-2 text-travel-earth-light">
                     Make the Deposit Payment
                   </h3>
                   <p className="text-wander-slate-gray">
@@ -47,10 +47,10 @@ const BookingSteps = () => {
               {/* Step 3 */}
               <div className="flex gap-6">
                 <div className="h-16 w-16 flex-shrink-0 rounded-full border-2 border-travel-earth flex items-center justify-center">
-                  <PlaneTakeoff size={32} className="text-travel-earth" />
+                  <PlaneTakeoff size={32} className="text-travel-earth-light" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-travel-earth">
+                  <h3 className="text-xl font-semibold mb-2 text-travel-earth-light">
                     Arrive at your destination!
                   </h3>
                   <p className="text-wander-slate-gray">
@@ -63,7 +63,7 @@ const BookingSteps = () => {
           
           {/* Right column - Trip FAQs */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-travel-earth">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-travel-earth-light">
               Trip FAQs
             </h2>
             

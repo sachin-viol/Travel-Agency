@@ -29,25 +29,6 @@ const Index = () => {
       document.body.classList.remove('page-loaded');
     };
   }, []);
-  // return (
-  //   <div className="min-h-screen">
-  //     <Navbar />
-  //     <Hero />
-  //     <WhyChooseUs />
-  //     {/* <TourCategories /> */}
-  //     <UpcomingTrips id="upcoming-trips" />
-  //     <FeatureSection />
-  //     {/* <InternationalTrips />
-  //     <ExploreIndia />
-  //     <RomanticEscapes /> */}
-  //     {/* <FeaturedTours /> */}
-  //     {/* <GuidedTravel /> */}
-  //     <BookingSteps />
-  //     <BestMoments />
-  //     <Testimonials />
-  //     <Footer />
-  //   </div>
-  // );
   return (
     <div className="min-h-screen bg-white">
       <Navbar />

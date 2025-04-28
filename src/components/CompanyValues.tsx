@@ -41,10 +41,10 @@ const CompanyValues = () => {
   };
   
   return (
-    <section className="py-16 bg-travel-cloud-white">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-travel-earth">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-travel-earth-light">
             Here's to the VALUES we strive for
           </h2>
           
@@ -60,7 +60,7 @@ const CompanyValues = () => {
               >
                 <button
                   onClick={() => toggleExpand(value.id)}
-                  className="w-full flex items-center justify-between py-3 text-left font-medium text-travel-earth hover:text-travel-teal transition-colors"
+                  className="w-full flex items-center justify-between py-3 text-left font-medium text-travel-earth-light hover:text-travel-earth-light/90 transition-colors"
                 >
                   <span className="flex items-center text-xl">
                     <span className="mr-4 text-2xl font-bold">{value.id}</span>

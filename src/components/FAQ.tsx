@@ -7,11 +7,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import PageHero from './PageHero';
 
 const faqItems = [
   {
     question: "How do I book a trip?",
-    answer: "Booking a trip with WANDERLUX is easy! Browse our available trips, select the one you're interested in, and click the 'Book Now' button. Follow the prompts to complete your booking, make a payment, and receive confirmation details."
+    answer: "Booking a trip with WANDERTRIBE is easy! Browse our available trips, select the one you're interested in, and click the 'Book Now' button. Follow the prompts to complete your booking, make a payment, and receive confirmation details."
   },
   {
     question: "What is your cancellation policy?",
@@ -55,13 +56,18 @@ const FAQ = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="pt-24 flex-grow">
-        <section className="py-12 md:py-16 bg-travel-cloud-white">
+      <PageHero
+        title="Frequently Asked Questions"
+        description="Find answers to common questions about booking, traveling, and experiencing our adventures."
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      />
+      <div className="py-16">
+        <section className="py-12 md:py-16 bg-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth">Frequently Asked Questions</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth-light"></h1>
               <p className="text-lg text-gray-600">
-                Find answers to common questions about booking, traveling, and experiencing our adventures
+
               </p>
             </div>
             
@@ -69,7 +75,7 @@ const FAQ = () => {
               <Accordion type="single" collapsible className="w-full">
                 {faqItems.map((item, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
-                    <AccordionTrigger className="py-5 px-6 text-left text-travel-earth font-medium hover:no-underline">
+                    <AccordionTrigger className="py-5 px-6 text-left text-travel-earth-light font-medium hover:no-underline">
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-5 pt-0 text-gray-700">

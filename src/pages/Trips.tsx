@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, MapPin, Filter, Globe, Award, Heart, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageHero from '@/components/PageHero';
 
 const trips = [
   {
@@ -88,13 +89,13 @@ const TripCategories = () => {
     { name: "Adventure", icon: <Globe className="h-6 w-6 mb-3" />, color: "bg-travel-terracotta/10 text-travel-terracotta" },
     { name: "Cultural", icon: <Award className="h-6 w-6 mb-3" />, color: "bg-travel-teal/10 text-travel-teal" },
     { name: "Beach", icon: <Heart className="h-6 w-6 mb-3" />, color: "bg-travel-sand/10 text-travel-sand" },
-    { name: "Backpacking", icon: <Users className="h-6 w-6 mb-3" />, color: "bg-travel-earth/10 text-travel-earth" },
+    { name: "Backpacking", icon: <Users className="h-6 w-6 mb-3" />, color: "bg-travel-earth/10 text-travel-earth-light" },
   ];
 
   return (
     <div className="py-16 bg-travel-cloud-white">
       <div className="container-custom">
-        <h2 className="text-2xl font-bold text-travel-earth mb-10 text-center">Browse by Trip Type</h2>
+        <h2 className="text-2xl font-bold text-travel-earth-light mb-10 text-center">Browse by Trip Type</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((category) => (
             <div key={category.name} className="flex flex-col items-center p-6 rounded-lg border border-gray-100 hover:shadow-md transition-all cursor-pointer">
@@ -118,7 +119,7 @@ const TripSearchBanner = () => {
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           Let our travel experts help you craft a personalized adventure tailored to your preferences and schedule.
         </p>
-        <Link to="/contact" className="bg-travel-cloud-white text-travel-earth px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
+        <Link to="/contact" className="bg-travel-cloud-white text-travel-earth-light px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
           Contact Our Experts
         </Link>
       </div>
@@ -130,19 +131,23 @@ const Trips = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-24 pb-16">
+      <PageHero
+        title="Our Adventures"
+        description="Explore our carefully crafted journeys designed to immerse you in extraordinary destinations
+        and connect you with like-minded travelers."
+        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      />
+      <div className="py-16">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth">Our Adventures</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth-light"></h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore our carefully crafted journeys designed to immerse you in extraordinary destinations
-              and connect you with like-minded travelers.
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div className="mb-4 md:mb-0">
-              <h2 className="text-2xl font-semibold text-travel-earth">All Trips</h2>
+              <h2 className="text-2xl font-semibold text-travel-earth-light">All Trips</h2>
             </div>
 
             <div className="flex flex-wrap gap-4">
@@ -173,7 +178,7 @@ const Trips = () => {
                     alt={trip.destination}
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth">
+                  <div className="absolute top-4 right-4 bg-travel-cloud-white px-3 py-1 rounded-full text-sm font-semibold text-travel-earth-light">
                     {trip.price}
                   </div>
                   <div className="absolute top-4 left-4 bg-travel-terracotta text-travel-cloud-white px-3 py-1 rounded-full text-sm font-medium">
@@ -181,7 +186,7 @@ const Trips = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-travel-earth">{trip.destination}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-travel-earth-light">{trip.destination}</h3>
                   <p className="text-sm text-gray-500 flex items-center mb-4">
                     <MapPin size={16} className="mr-1" />
                     {trip.breakdown}
@@ -205,8 +210,8 @@ const Trips = () => {
           </div>
         </div>
       </div>
-      <TripSearchBanner />
       <TripCategories />
+      <TripSearchBanner />
       <Footer />
     </div>
   );
