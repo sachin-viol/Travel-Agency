@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="animate-fade-in">
             <h3 className="text-2xl font-serif font-bold mb-4 relative pr-6">
-            <img src="/unnamed.ico" alt="Logo" className='w-16 w-1/2 mx-auto ' />
+              <span className='text-travel-earth font-bold'>WANDER <span className='text-travel-warm-orange'>TRIBE</span></span>
               {/* <span className="block absolute -bottom-1 left-0 w-16 h-1 bg-travel-terracotta"></span> */}
             </h3>
             <p className="text-white/80 mb-6">

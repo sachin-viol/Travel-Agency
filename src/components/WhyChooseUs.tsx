@@ -13,10 +13,10 @@ const CompanyIntroduction = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-indigo-700 p-8 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-travel-earth/20 p-8 text-travel-earth-light rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
             <div className="mb-6 flex justify-center">
               <div className="rounded-full bg-white p-4 relative">
-                <Shield size={36} className="text-indigo-700" />
+                <Shield size={36} className="text-travel-earth-light" />
                 <div className="absolute top-0 right-0 h-3 w-3 bg-yellow-400 rounded-full"></div>
               </div>
             </div>
@@ -27,10 +27,10 @@ const CompanyIntroduction = () => {
             </p>
           </div>
 
-          <div className="bg-teal-600 p-8 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-travel-earth/20 p-8 text-travel-earth-light rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
             <div className="mb-6 flex justify-center">
               <div className="rounded-full bg-white p-4 relative">
-                <Award size={36} className="text-teal-600" />
+                <Award size={36} className="text-travel-earth-light" />
                 <div className="absolute top-0 right-0 h-3 w-3 bg-yellow-400 rounded-full"></div>
               </div>
             </div>
@@ -41,15 +41,15 @@ const CompanyIntroduction = () => {
             </p>
           </div>
 
-          <div className="bg-amber-100 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-travel-earth/20 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
             <div className="mb-6 flex justify-center">
               <div className="rounded-full bg-white p-4 relative">
-                <Heart size={36} className="text-rose-500" />
+                <Heart size={36} className="text-travel-earth-light" />
                 <div className="absolute top-0 right-0 h-3 w-3 bg-yellow-400 rounded-full"></div>
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-gray-800">Our Philosophy</h3>
-            <p className="text-center text-gray-700">
+            <h3 className="text-xl font-bold mb-4 text-center text-travel-earth-light">Our Philosophy</h3>
+            <p className="text-center text-travel-earth-light">
               We believe travel should enrich lives. Our carefully curated experiences promote cultural understanding, 
               environmental sustainability, and meaningful connections.
             </p>
@@ -78,7 +78,7 @@ export default CompanyIntroduction;
 //         </div>
 
 //         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-//           <div className="bg-green-700 p-10 text-travel-cloud-white md:rounded-tl-[40px]">
+//           <div className="bg-travel-earth/20green-700 p-10 text-travel-cloud-white md:rounded-tl-[40px]">
 //             <div className="mb-6 flex justify-center">
 //               <div className="rounded-full bg-travel-cloud-white p-5 relative">
 //                 <Shield size={42} className="text-green-700" />
@@ -93,7 +93,7 @@ export default CompanyIntroduction;
 //             </p>
 //           </div>
 
-//           <div className="bg-travel-earth p-10 text-travel-cloud-white">
+//           <div className="bg-travel-earth/20travel-earth p-10 text-travel-cloud-white">
 //             <div className="mb-6 flex justify-center">
 //               <div className="rounded-full bg-travel-cloud-white p-5 relative">
 //                 <Award size={42} className="text-travel-earth" />
@@ -107,7 +107,7 @@ export default CompanyIntroduction;
 //             </p>
 //           </div>
 
-//           <div className="bg-sky-100 p-10 md:rounded-tr-[40px]">
+//           <div className="bg-travel-earth/20sky-100 p-10 md:rounded-tr-[40px]">
 //             <div className="mb-6 flex justify-center">
 //               <div className="rounded-full bg-travel-cloud-white p-5 relative">
 //                 <Heart size={42} className="text-travel-teal" />
