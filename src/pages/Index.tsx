@@ -14,6 +14,9 @@ import GuidedTravel from '@/components/GuidedTravel';
 import FeaturedTours from '@/components/FeaturedTours';
 import BookingSteps from '@/components/BookingSteps';
 import { useEffect } from 'react';
+import NewComp from '@/components/NewComp';
+import JoinNow from '@/components/JoinNow';
+import Newsletter from '@/components/NewsLetter';
 
 const Index = () => {
   useEffect(() => {
@@ -33,33 +36,15 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <div className="animate-fade-in" style={{ animationDelay: '300ms' }}>
-        <WhyChooseUs />
-      </div>
-      {/* <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
-        <TourCategories />
-      </div> */}
-      <div className="animate-fade-in" style={{ animationDelay: '500ms' }}>
-        <UpcomingTrips />
-      </div>
-      <div className="animate-fade-in" style={{ animationDelay: '600ms' }}>
-        <GuidedTravel />
-      </div>
-      <div className="animate-fade-in" style={{ animationDelay: '700ms' }}>
-        <FeatureSection />
-      </div>
-      {/* <div className="animate-fade-in" style={{ animationDelay: '700ms' }}>
-        <FeaturedTours />
-      </div> */}
-      <div className="animate-fade-in" style={{ animationDelay: '800ms' }}>
-        <BookingSteps />
-      </div>
-      <div className="animate-fade-in" style={{ animationDelay: '900ms' }}>
-        <BestMoments />
-      </div>
-      <div className="animate-fade-in" style={{ animationDelay: '1000ms' }}>
-        <Testimonials />
-      </div>
+      <UpcomingTrips />
+      <FeatureSection />
+      <GuidedTravel />
+      <JoinNow />
+      <Testimonials />
+      <Newsletter />
+      {/* <WhyChooseUs />
+      <BookingSteps />
+      <BestMoments /> */}
       <Footer />
     </div>
   );

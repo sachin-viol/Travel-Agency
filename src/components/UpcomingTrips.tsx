@@ -204,7 +204,7 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
 
 const UpcomingTrips = ({ id }: { id?: string }) => {
   return (
-    <section id={id} className="section-padding bg-travel-earth/10">
+    <section id={id} className="section-padding ">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Upcoming Adventures</h2>
@@ -215,7 +215,7 @@ const UpcomingTrips = ({ id }: { id?: string }) => {
         </div>
 
         {/* Swiper Carousel */}
-        <Swiper
+        {/* <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
@@ -231,13 +231,49 @@ const UpcomingTrips = ({ id }: { id?: string }) => {
               <TripCard trip={trip} />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm mx-auto">
+          <div className="relative">
+            <img
+              src="https://images.unsplash.com/photo-1715959168101-6001fd95ea3d?q=80&w=2107&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Goa beach"
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-sm font-semibold shadow-sm">
+              TBD
+            </div>
+          </div>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold text-travel-earth-light">Goa Adventure</h3>
+            <div className="flex items-center text-gray-600 text-sm mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Goa</span>
+            </div>
+            <div className="flex items-center text-gray-600 text-sm mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>TBD Days</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>TBD</span>
+            </div>
+            <button className="w-full mt-4 bg-travel-earth hover:bg-travel-earth-light text-white py-2 rounded-md font-medium transition duration-200">
+              View Trip
+            </button>
+          </div>
+        </div>
 
-        <div className="text-center mt-12">
+
+        {/* <div className="text-center mt-12">
           <Link to="/trips">
             <button className="btn-primary">View All Trips</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import { Calendar, Clock, MapPin, Filter, Globe, Award, Heart, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PageHero from '@/components/PageHero';
+import { useState } from 'react';
 
 const trips = [
   {
@@ -127,7 +128,11 @@ const TripSearchBanner = () => {
   );
 };
 
+
+
+
 const Trips = () => {
+  const [activeTab, setActiveTab] = useState('upcoming');
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -145,7 +150,7 @@ const Trips = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          {/* <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div className="mb-4 md:mb-0">
               <h2 className="text-2xl font-semibold text-travel-earth-light">All Trips</h2>
             </div>
@@ -207,6 +212,75 @@ const Trips = () => {
                 </div>
               </div>
             ))}
+          </div> */}
+
+          <div className="w-full max-w-4xl mx-auto">
+            {/* Navbar */}
+            <div className="flex border-b border-gray-200">
+              <button
+                className={`px-4 py-2 font-bold text-lg ${activeTab === 'upcoming'
+                  ? 'border-b-2 border-travel-earth-light text-travel-earth-light'
+                  : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                onClick={() => setActiveTab('upcoming')}
+              >
+                Upcoming Trip
+              </button>
+              <button
+                className={`px-4 py-2 font-bold text-lg ${activeTab === 'past'
+                  ? 'border-b-2 border-travel-earth-light text-travel-earth-light'
+                  : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                onClick={() => setActiveTab('past')}
+              >
+                Past Trips
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="mt-6">
+              {activeTab === 'upcoming' ? (
+                <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm mx-auto">
+                  <div className="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1715959168101-6001fd95ea3d?q=80&w=2107&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Goa beach"
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 text-sm font-semibold shadow-sm">
+                      TBD
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold text-travel-earth-light">Goa Adventure</h3>
+                    <div className="flex items-center text-gray-600 text-sm mt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>Goa</span>
+                    </div>
+                    <div className="flex items-center text-gray-600 text-sm mt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>TBD Days</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span>TBD</span>
+                    </div>
+                    <button className="w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md font-medium transition duration-200">
+                      View Trip
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex justify-center items-center h-48">
+                  <p className="text-travel-earth-light text-2xl font-bold">Coming soon</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

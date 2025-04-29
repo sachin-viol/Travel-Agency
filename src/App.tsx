@@ -15,6 +15,7 @@ import FAQ from "./components/FAQ";
 import Gallery from "./components/Gallery";
 import Team from "./components/Team";
 import Careers from "./pages/Careers";
+import Reviews from "./components/Reviews";
 
 const queryClient = new QueryClient();
 
@@ -28,13 +29,14 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/trips" element={<Trips />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
           <Route path="/past-trips" element={<PastTrips />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />          <Route path="/trip/:slug" element={<TripDetail />} />
+          <Route path="/reviews" element={<Reviews />} />          <Route path="/trip/:slug" element={<TripDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

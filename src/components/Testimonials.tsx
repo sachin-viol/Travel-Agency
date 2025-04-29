@@ -82,7 +82,7 @@ const Testimonials = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">What Our Travelers Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">What Our Tribes Say</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Hear from fellow adventurers who have experienced our exceptional journeys firsthand.
           </p>

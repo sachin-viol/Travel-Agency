@@ -122,7 +122,7 @@ const Navbar = () => {
       { label: 'Past', href: '/past-trips' }
     ],
     experience: [
-      { label: 'Reviews', href: '/' },
+      { label: 'Reviews', href: '/reviews' },
       { label: 'Gallery', href: '/gallery' }
     ],
     aboutUs: [
@@ -159,7 +159,7 @@ const Navbar = () => {
           <NavLink href="/" text="Home" scrolled={scrolled} />
 
           {/* Trips Dropdown */}
-          <div className="relative group">
+          {/* <div className="relative group">
             <button
               onClick={() => toggleDropdown('trips')}
               className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
@@ -194,7 +194,9 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
+
+          <NavLink href="/trips" text="Trips" scrolled={scrolled} />
 
           <NavLink href="/blogs" text="Blogs" scrolled={scrolled} />
 

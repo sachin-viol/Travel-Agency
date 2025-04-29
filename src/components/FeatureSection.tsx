@@ -1,4 +1,4 @@
-import {  ChevronLeft, ChevronRight, Users, CreditCard, Clipboard, User } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Users, CreditCard, Clipboard, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 
@@ -7,8 +7,6 @@ const FeatureSection = () => {
   const [visibleCards, setVisibleCards] = useState(3);
   const [maxSlide, setMaxSlide] = useState(0);
   const sliderRef = useRef(null);
-
-
 
   const featureCards = [
     {
@@ -107,12 +105,24 @@ const FeatureSection = () => {
   return (
     <section className="py-16 md:py-24 bg-travel-earth/10">
       <div className="container-custom">
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Immersive guided tours, all around the globe</h2>
-          <p className="text-lg text-gray-700">
-            Explore with a friend, the whole family, or solo. However—and wherever—you want to go, our expert-planned group travel experiences make it easy to see the world.
-          </p>
-        </div>
+        <section className="px-4 py-16 bg-blue-50 md:py-24">
+          <div className="container mx-auto text-center">
+            <h1 className="mb-6 text-4xl font-bold text-travel-earth-light md:text-5xl">
+              Discover the World with WanderTribe
+            </h1>
+            <p className="max-w-2xl mx-auto mb-10 text-lg leading-relaxed text-gray-600">
+              We are more than just a travel company – we are a tribe of passionate wanderers who believe
+              in creating meaningful connections through authentic travel experiences. Our carefully curated
+              trips combine adventure, cultural immersion, and responsible tourism to give you the most
+              enriching travel experience possible.
+            </p>
+            <Link to="/trips">
+              <a className="px-8 py-3 text-lg font-semibold text-white transition-colors bg-orange-500 rounded-full hover:bg-orange-600">
+                Explore Our Trips
+              </a>
+            </Link>
+          </div>
+        </section>
 
         <div className="relative mt-12 tracking-wider">
           <div

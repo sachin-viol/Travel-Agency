@@ -182,7 +182,7 @@ const Careers = () => {
       </section>
 
       {/* Team Testimonials */}
-      <section className="py-16 bg-travel-teal/10">
+      {/* <section className="py-16 bg-travel-teal/10">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
@@ -225,10 +225,10 @@ const Careers = () => {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Career Growth & Learning */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -291,7 +291,7 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-16 bg-travel-earth text-white border-b-2 border-travel-earth-light">
@@ -302,7 +302,7 @@ const Careers = () => {
           <p className="text-white/80 max-w-3xl mx-auto mb-8">
             Even without current openings, we're always looking for exceptional talent to join our team when opportunities arise.
           </p>
-          <Button className="bg-travel-sand hover:bg-travel-sand/90 text-travel-earth px-6 py-3 rounded-md shadow-md transition-all duration-300">
+          <Button className="bg-travel-sand hover:bg-travel-sand/90 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300">
             Submit Your Application
           </Button>
         </div>

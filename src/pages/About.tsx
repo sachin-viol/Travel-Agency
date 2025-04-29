@@ -49,7 +49,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-">
             <div className="bg-travel-cloud-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-travel-earth-light">Authentic Experiences</h3>
               <p className="text-travel-slate-gray">
@@ -73,6 +73,7 @@ const About = () => {
       </div>
 
       <TeamSection />
+      <div className='mt-5 w-full h-10'/>
       <CompanyValues />
 
       <div className="py-16 bg-travel-earth/30">

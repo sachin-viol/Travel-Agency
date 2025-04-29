@@ -15,7 +15,7 @@ const Footer = () => {
               {/* <span className="block absolute -bottom-1 left-0 w-16 h-1 bg-travel-terracotta"></span> */}
             </h3>
             <p className="text-white/80 mb-6">
-              Creating unforgettable journeys and meaningful connections for adventurous souls since 2010.
+              Join our tribe and discover the world's most breathtaking destinations with like-minded travelers.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           {/* Popular Destinations */}
-          <div className="animate-fade-in animate-stagger-2">
+          {/* <div className="animate-fade-in animate-stagger-2">
             <h4 className="text-lg font-bold mb-4 relative">
               Popular Destinations
               <span className="block absolute -bottom-1 left-0 w-12 h-0.5 bg-travel-teal"></span>
@@ -77,10 +77,11 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
+
 
           {/* Contact Info */}
-          <div className="animate-fade-in animate-stagger-3">
+          <div className="anim  ate-fade-in animate-stagger-3">
             <h4 className="text-lg font-bold mb-4 relative">
               Contact Us
               <span className="block absolute -bottom-1 left-0 w-12 h-0.5 bg-travel-teal"></span>
@@ -101,12 +102,25 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0 text-travel-sand" />
-                <a href="mailto:info@wanderlux.com" className="text-white/80 hover:text-travel-sand transition-colors sidebar-link">
-                  info@wanderlux.com
+                <a href="mailto:info@wandertribe.com" className="text-white/80 hover:text-travel-sand transition-colors sidebar-link">
+                  info@wandertribe.com
                 </a>
               </li>
             </ul>
           </div>
+
+          <div className="animate-fade-in animate-stagger-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580958158c0f1%3A0x5ce35a6920576254!2sSan%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
         </div>
 
         {/* Newsletter */}
