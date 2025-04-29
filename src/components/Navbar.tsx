@@ -138,20 +138,23 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
         ? 'bg-white shadow-md py-2'
-        : 'bg-transparent py-4'
+        : 'bg-white py-4'
         }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
-          <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
+          {/* <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
             <span className={`text-2xl font-bold ${scrolled ? 'text-blue-400' : 'text-blue-300'}`}>
               Wander
             </span>
             <span className={`text-2xl font-bold ${scrolled ? 'text-orange-500' : 'text-orange-400'}`}>
               Tribe
             </span>
-          </div>
+          </div> */}
+          <img src="/Logo.jpeg" alt="LOGO" className='w-28'/>
+            
+          
         </Link>
 
         {/* Desktop Navigation */}
@@ -166,7 +169,7 @@ const Navbar = () => {
           <div className="relative group">
             <button
               onClick={() => toggleDropdown('experience')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
+              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
                 } font-medium transition-colors duration-300`}
             >
               Experience
@@ -204,7 +207,7 @@ const Navbar = () => {
           <div className="relative group">
             <button
               onClick={() => toggleDropdown('aboutUs')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
+              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
                 } font-medium transition-colors duration-300`}
             >
               About Us
@@ -243,7 +246,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
-            className={`focus:outline-none ${scrolled ? 'text-travel-earth-light' : 'text-white'}`}
+            className={`focus:outline-none ${scrolled ? 'text-travel-earth-light' : 'text-travel-earth-light'}`}
           >
             <svg
               className="h-6 w-6"
@@ -376,7 +379,7 @@ const Navbar = () => {
 const NavLink = ({ href, text, scrolled }) => {
   return (
     <Link to={href}>
-      <div className={`cursor-pointer ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
+      <div className={`cursor-pointer ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
         } font-medium transition-colors duration-300`}>
         {text}
       </div>

@@ -90,35 +90,28 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 flex-shrink-0 mt-1 text-travel-sand" />
                 <span className="text-white/80">
-                  123 Adventure Way, Suite 101<br />
-                  San Francisco, CA 94103
+                  Rosa Elite 1st floor <br />
+                  Thane west 400615
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 flex-shrink-0 text-travel-sand" />
                 <a href="tel:+14155552671" className="text-white/80 hover:text-travel-sand transition-colors sidebar-link">
-                  (415) 555-2671
+                  +91 9326412687
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0 text-travel-sand" />
-                <a href="mailto:info@wandertribe.com" className="text-white/80 hover:text-travel-sand transition-colors sidebar-link">
-                  info@wandertribe.com
+                <a href="mailto: info@wandertribe.co.in" className="text-white/80 hover:text-travel-sand transition-colors sidebar-link">
+                  info@wandertribe.co.in
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="animate-fade-in animate-stagger-2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580958158c0f1%3A0x5ce35a6920576254!2sSan%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.787612610198!2d72.94541208623305!3d19.286983737784173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb0324914c3f%3A0xb21bc2c2e8a8363c!2sRosa%20Elite%20A%20CHSL!5e0!3m2!1sen!2sin!4v1745953734660!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
 
         </div>

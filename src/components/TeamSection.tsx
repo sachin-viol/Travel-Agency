@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Maria Pereira",
     position: "CEO, Founder",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
-    bio: "Maria is a visionary travelpreneur with an experience of leading more than 200 community trips. He's fond of all kinds of voyages, yet his favourite are motorbike expeditions, having accounts for 30000kms of extreme rides. He can hold a conversation around business, human values and almost everything one can think of. The man knows how to get down to work and party, equally well.",
+    bio: "From wandering through bustling cities to exploring hidden corners of the world, Maria felt most alive when she’s on the move. What began as solo adventures soon turned into unforgettable journeys with friends, deepening her love for new places and cultures. Travel isn’t just a passion for her it’s a way of life. Inspired by her own experiences, she founded this company to create meaningful, immersive journeys that help others craft memories beyond the guidebooks—authentic, personal, and unforgettable.",
     social: {
       linkedin: "#",
       instagram: "#"
@@ -17,7 +17,7 @@ const teamMembers = [
     name: "Jinit Thakkar",
     position: "Co-Founder, Voluntary Assistance and Tech Advisor",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-    bio: "Jinit is a passionate learner, and an instinctive marketer. He has led more than 40 trips and has taken his hot wheels on a ride of total 50,000kms. He has a habit of finding a path even where it seems impossible, that is why he has been to over 30 treks, some well known, others unexplored. Being an avid reader, he is the perfect motivational speaker for the team.",
+    bio: "Jinit has always held a deep passion for the way travel connects individuals to diverse places, cultures, and narratives. Motivated by this belief, he co-founded the company with the vision of enabling others to experience the authentic essence of each destination. Beyond iconic landmarks, he emphasizes the importance of engaging with local cuisine, customs, and daily life—elements that truly define a place. His mission is to simplify and enrich the travel experience, empowering people to explore, discover, and appreciate the world in its fullest form.",
     social: {
       linkedin: "#",
       instagram: "#"
@@ -48,15 +48,6 @@ const TeamSection = () => {
 
               <h3 className="text-2xl font-bold text-travel-earth-light mb-1">{member.name}</h3>
               <p className="text-xl text-gray-600 mb-3">{member.position}</p>
-
-              <div className="flex space-x-3 mb-4">
-                <a href={member.social.linkedin} className="text-travel-teal hover:text-travel-earth-light transition-colors">
-                  <Linkedin />
-                </a>
-                <a href={member.social.instagram} className="text-travel-teal hover:text-travel-earth-light transition-colors">
-                  <Instagram />
-                </a>
-              </div>
 
               <div className="border-t border-gray-200 pt-4 w-full">
                 <p className="text-gray-600">{member.bio}</p>
