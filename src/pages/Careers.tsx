@@ -202,7 +202,7 @@ const Careers = () => {
 
                           <div>
                             <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Date Opened</p>
-                            <p className="text-travel-earth-dark font-bold">03/20/2025</p>
+                            <p className="text-travel-earth-dark font-bold">04/30/2025</p>
                           </div>
 
                           <div>

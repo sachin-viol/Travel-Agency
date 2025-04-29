@@ -61,8 +61,8 @@ const FAQ = () => {
         description="Find answers to common questions about booking, traveling, and experiencing our adventures."
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
       />
-      <div className="py-16">
-        <section className="py-12 md:py-16 bg-white">
+      <div className="py-16 pt-8">
+        <section className=" bg-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-travel-earth-light"></h1>

@@ -144,7 +144,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
-          <div className="flex items-center cursor-pointer">
+          <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
             <span className={`text-2xl font-bold ${scrolled ? 'text-blue-400' : 'text-blue-300'}`}>
               Wander
             </span>

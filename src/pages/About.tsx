@@ -13,7 +13,7 @@ const About = () => {
         description="Learn about our story, mission, and the passionate team behind WANDER TRIBE"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
       />
-      <div className="py-16">
+      <div className="py-16 pb-8">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-travel-earth-light">About Us</h1>
           <p className="text-lg text-travel-slate-gray mb-16">
@@ -72,8 +72,7 @@ const About = () => {
         </div>
       </div>
 
-      <TeamSection />
-      <div className='mt-5 w-full h-10'/>
+      {/* <TeamSection /> */}
       <CompanyValues />
 
       <div className="py-16 bg-travel-earth/30">
