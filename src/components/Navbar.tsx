@@ -158,44 +158,6 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <NavLink href="/" text="Home" scrolled={scrolled} />
 
-          {/* Trips Dropdown */}
-          {/* <div className="relative group">
-            <button
-              onClick={() => toggleDropdown('trips')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
-                } font-medium transition-colors duration-300`}
-            >
-              Trips
-              <svg
-                className="ml-1 h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              className={`absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 transform opacity-0 scale-95 
-                ${activeDropdown === 'trips' ? 'transform-none opacity-100' : ''} 
-                transition-all duration-200 origin-top-left
-                group-hover:transform-none group-hover:opacity-100`}
-            >
-              {dropdownMenus.trips.map((item) => (
-                <Link key={item.label} to={item.href}>
-                  <div className="block px-4 py-2 text-travel-earth-light hover:bg-travel-earth/20">
-                    {item.label}
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div> */}
-
           <NavLink href="/trips" text="Trips" scrolled={scrolled} />
 
           <NavLink href="/blogs" text="Blogs" scrolled={scrolled} />
@@ -434,3 +396,4 @@ const MobileNavLink = ({ href, text }) => {
 };
 
 export default Navbar;
+

@@ -150,8 +150,9 @@ const Footer = () => {
         <div className="border-t border-travel-cloud-white/20 mt-8 pt-8 text-center text-travel-cloud-white/60 text-sm">
           <p>© {currentYear} WANDER TRIBE. All rights reserved.</p>
           <div className="mt-2 space-x-4">
-            <Link to="/privacy" className="hover:text-travel-cloud-white transition-colors">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="hover:text-travel-cloud-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-travel-cloud-white transition-colors">Terms of Service</Link>
+            <Link to="/cancellation-policy" className="hover:text-travel-cloud-white transition-colors">Cancellation Policy</Link>
           </div>
         </div>
       </div>

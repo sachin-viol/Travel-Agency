@@ -204,7 +204,7 @@ const TripCard = ({ trip }: { trip: typeof tripData[0] }) => {
 
 const UpcomingTrips = ({ id }: { id?: string }) => {
   return (
-    <section id={id} className="section-padding ">
+    <section id={id} className="section-padding bg-travel-earth/10">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth-light">Upcoming Adventures</h2>

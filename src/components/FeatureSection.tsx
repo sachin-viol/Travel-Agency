@@ -103,9 +103,9 @@ const FeatureSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-travel-earth/10">
+    <section className="pb-16 md:py">
       <div className="container-custom">
-        <section className="px-4 py-16 bg-blue-50 md:py-24">
+        <section className="px-4 py-8  md:py-24">
           <div className="container mx-auto text-center">
             <h1 className="mb-6 text-4xl font-bold text-travel-earth-light md:text-5xl">
               Discover the World with WanderTribe
@@ -124,7 +124,7 @@ const FeatureSection = () => {
           </div>
         </section>
 
-        <div className="relative mt-12 tracking-wider">
+        <div className="relative m tracking-wider">
           <div
             className="overflow-hidden"
             ref={sliderRef}
@@ -222,4 +222,6 @@ const FeatureSection = () => {
 };
 
 export default FeatureSection;
+
+
 

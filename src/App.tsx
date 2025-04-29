@@ -16,6 +16,9 @@ import Gallery from "./components/Gallery";
 import Team from "./components/Team";
 import Careers from "./pages/Careers";
 import Reviews from "./components/Reviews";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import CancellationPolicy from "./pages/CancellationPolicy";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +37,9 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/cancellation-policy" element={<CancellationPolicy />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />          <Route path="/trip/:slug" element={<TripDetail />} />
           <Route path="/reviews" element={<Reviews />} />          <Route path="/trip/:slug" element={<TripDetail />} />

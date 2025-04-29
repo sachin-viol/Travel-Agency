@@ -36,14 +36,14 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <UpcomingTrips />
       <FeatureSection />
+      <UpcomingTrips />
       <GuidedTravel />
       <JoinNow />
       <Testimonials />
       <Newsletter />
+      {/* <BookingSteps /> */}
       {/* <WhyChooseUs />
-      <BookingSteps />
       <BestMoments /> */}
       <Footer />
     </div>

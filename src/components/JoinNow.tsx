@@ -70,10 +70,10 @@ const JoinNow = () => {
     >
       <div className="container px-4 mx-auto">
         <h2 className="mb-8 text-4xl font-bold text-center text-travel-earth-light">
-          Join Our Community
+          Join Our Tribe
         </h2>
         
-        <p className="max-w-2xl mx-auto mb-12 text-lg text-center text-slate-600">
+        <p className="max-w- mx-auto mb-12 text-lg text-center text-slate-600">
           Follow us on Instagram <span className="font-semibold">@wandertribe.official</span> and share your travel moments with us using <span className="font-semibold">#WanderTribe</span>.
         </p>
         

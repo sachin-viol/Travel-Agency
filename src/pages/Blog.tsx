@@ -161,14 +161,14 @@ const Blog = () => {
       <Navbar />
       <PageHero
         title="Blogs"
-        description="Stories, tips, and inspiration to fuel your wanderlust and enhance your travel experiences."
+        description="Why We Travel: The Story Behind Wander Tribe"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
       />
       <div className="py-16">
         <div className="container-custom">
           <div className="relative text-center mb-16 ">
             {/* Decorative background element */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth-light relative z-10">Travel Blog</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-travel-earth-light relative z-10"></h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto relative z-10">
             </p>
           </div>

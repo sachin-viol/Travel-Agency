@@ -12,7 +12,7 @@ const Careers = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <PageHero 
+      <PageHero
         title="Careers"
         description="Learn about our story, mission, and the passionate team behind WANDER TRIBE"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
@@ -20,169 +20,222 @@ const Careers = () => {
       <div className="py-16">
 
 
-      {/* Our Values */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
-              Our Team Values
-            </h2>
-            <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
-              At WANDER TRIBE, we're committed to building an environment where passionate individuals can thrive while creating unforgettable travel experiences.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-travel-teal border-t-4 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 bg-travel-teal-light/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
-                  <Heart className="text-travel-teal h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-travel-earth">Passion for Travel</h3>
-                <p className="text-travel-earth-light">
-                  We believe in the transformative power of travel and bring our own enthusiasm to every trip we curate.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-travel-sand border-t-4 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 bg-travel-sand-light/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
-                  <Users className="text-travel-sand h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-travel-earth">Collaborative Spirit</h3>
-                <p className="text-travel-earth-light">
-                  We work together across teams to create seamless, exceptional experiences for our travelers.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-travel-terracotta border-t-4 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 bg-travel-terracotta/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
-                  <Award className="text-travel-terracotta h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-travel-earth">Excellence</h3>
-                <p className="text-travel-earth-light">
-                  We strive for excellence in everything we do, from trip planning to customer service.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-16 bg-travel-earth/5">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
-              Why Work With Us
-            </h2>
-            <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
-              We offer competitive benefits and a unique work environment that supports your growth and well-being.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4 text-travel-teal">
-                <MapPin size={24} />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-travel-earth">Travel Opportunities</h3>
-              <p className="text-travel-earth-light text-sm">
-                Experience destinations firsthand with generous travel benefits and familiarization trips.
+        {/* Our Values */}
+        <section className="py-16 bg-white">
+          <div className="container-custom">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
+                Our Team Values
+              </h2>
+              <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
+                At WANDER TRIBE, we're committed to building an environment where passionate individuals can thrive while creating unforgettable travel experiences.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4 text-travel-sand">
-                <Clock size={24} />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-travel-earth">Flexible Schedule</h3>
-              <p className="text-travel-earth-light text-sm">
-                Maintain work-life balance with flexible work arrangements and remote options.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4 text-travel-terracotta">
-                <Star size={24} />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-travel-earth">Career Growth</h3>
-              <p className="text-travel-earth-light text-sm">
-                Develop your skills through mentorship, training, and advancement opportunities.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4 text-travel-teal-light">
-                <Coffee size={24} />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-travel-earth">Vibrant Culture</h3>
-              <p className="text-travel-earth-light text-sm">
-                Join a diverse team of travel enthusiasts in a collaborative and fun work environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Open Positions Section */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
-              Current Opportunities
-            </h2>
-            <p className="text-lg text-travel-earth-light max-w-3xl mx-auto mb-8">
-              While we don't have any open positions right now, we're always interested in meeting talented individuals passionate about travel and exceptional customer experiences.
-            </p>
-
-            <div className="max-w-3xl mx-auto">
-              <Card className="bg-travel-earth/5 border-none shadow-sm">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-travel-earth">Open to Future Possibilities?</h3>
-                  <p className="mb-6 text-travel-earth-light">
-                    Send us your resume and a cover letter explaining why you'd be a perfect addition to our WANDER TRIBE family. We'll keep your information on file and reach out when a suitable position becomes available.
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="border-travel-teal border-t-4 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="mb-4 bg-travel-teal-light/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
+                    <Heart className="text-travel-teal h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 text-travel-earth">Passion for Travel</h3>
+                  <p className="text-travel-earth-light">
+                    We believe in the transformative power of travel and bring our own enthusiasm to every trip we curate.
                   </p>
+                </CardContent>
+              </Card>
 
-                  <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
-                    <p className="text-center font-medium text-travel-earth">
-                      Send your application to: <span className="text-travel-terracotta">careers@wanderTRIBE.com</span>
-                    </p>
+              <Card className="border-travel-sand border-t-4 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="mb-4 bg-travel-sand-light/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
+                    <Users className="text-travel-sand h-6 w-6" />
                   </div>
+                  <h3 className="text-xl font-bold mb-2 text-travel-earth">Collaborative Spirit</h3>
+                  <p className="text-travel-earth-light">
+                    We work together across teams to create seamless, exceptional experiences for our travelers.
+                  </p>
+                </CardContent>
+              </Card>
 
-                  <div className="space-y-4">
-                    <h4 className="font-bold text-travel-earth">Include in your application:</h4>
-                    <ul className="space-y-2 text-travel-earth-light">
-                      <li className="flex items-start">
-                        <span className="text-travel-terracotta mr-2">•</span>
-                        Your resume highlighting relevant experience
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-travel-terracotta mr-2">•</span>
-                        A cover letter explaining your passion for travel and why you want to join WANDER TRIBE
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-travel-terracotta mr-2">•</span>
-                        Portfolio of work (if applicable to your field)
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-travel-terracotta mr-2">•</span>
-                        Types of positions you're interested in
-                      </li>
-                    </ul>
+              <Card className="border-travel-terracotta border-t-4 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="mb-4 bg-travel-terracotta/20 p-3 rounded-full w-12 h-12 flex items-center justify-center">
+                    <Award className="text-travel-terracotta h-6 w-6" />
                   </div>
+                  <h3 className="text-xl font-bold mb-2 text-travel-earth">Excellence</h3>
+                  <p className="text-travel-earth-light">
+                    We strive for excellence in everything we do, from trip planning to customer service.
+                  </p>
                 </CardContent>
               </Card>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Team Testimonials */}
-      {/* <section className="py-16 bg-travel-teal/10">
+        {/* Benefits Section */}
+        <section className="py-16 bg-travel-earth/5">
+          <div className="container-custom">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
+                Why Work With Us
+              </h2>
+              <p className="text-lg text-travel-earth-light max-w-3xl mx-auto">
+                We offer competitive benefits and a unique work environment that supports your growth and well-being.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="mb-4 text-travel-teal">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-travel-earth">Travel Opportunities</h3>
+                <p className="text-travel-earth-light text-sm">
+                  Experience destinations firsthand with generous travel benefits and familiarization trips.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="mb-4 text-travel-sand">
+                  <Clock size={24} />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-travel-earth">Flexible Schedule</h3>
+                <p className="text-travel-earth-light text-sm">
+                  Maintain work-life balance with flexible work arrangements and remote options.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="mb-4 text-travel-terracotta">
+                  <Star size={24} />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-travel-earth">Career Growth</h3>
+                <p className="text-travel-earth-light text-sm">
+                  Develop your skills through mentorship, training, and advancement opportunities.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="mb-4 text-travel-teal-light">
+                  <Coffee size={24} />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-travel-earth">Vibrant Culture</h3>
+                <p className="text-travel-earth-light text-sm">
+                  Join a diverse team of travel enthusiasts in a collaborative and fun work environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Open Positions Section */}
+        <section className="py-16 bg-white">
+          <div className="container-custom">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth" style={{ color: "#4AA3DF" }}>
+                Current Opportunities
+              </h2>
+              <p className="text-lg text-travel-earth-light max-w-3xl mx-auto mb-8">
+                While we don't have any open positions right now, we're always interested in meeting talented
+                individuals passionate about travel and exceptional customer experiences.
+              </p>
+
+              <div className="max-w-6xl mx-auto">
+                <Card className="bg-travel-earth/5 border-none shadow-sm" style={{ backgroundColor: "#F8FCFF" }}>
+                  <CardContent className="p-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                      {/* Left side - Open to Future Possibilities */}
+
+                      <div className='col-span-3'>
+                        <h3 className="text-2xl font-bold mb-4 text-travel-earth" style={{ color: "#4AA3DF" }}>
+                          Open to Future Possibilities?
+                        </h3>
+                        <p className="mb-6 text-travel-earth-light">
+                          Send us your resume and a cover letter explaining why you'd be a perfect
+                          addition to our WANDER TRIBE family. We'll keep your information on file and
+                          reach out when a suitable position becomes available.
+                        </p>
+
+                        <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+                          <p className="text-center font-medium text-travel-earth">
+                            Send your application to: <span className="text-travel-terracotta" style={{ color: "#F47B56" }}>careers@wanderTRIBE.com</span>
+                          </p>
+                        </div>
+
+                        <div className="space-y-4">
+                          <h4 className="font-bold text-travel-earth text-center" style={{ color: "#4AA3DF" }}>
+                            Include in your application:
+                          </h4>
+                          <ul className="space-y-2 text-travel-earth-light">
+                            <li className="flex items-start">
+                              <span className="text-travel-terracotta mr-2" style={{ color: "#F47B56" }}>•</span>
+                              Your resume highlighting relevant experience
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-travel-terracotta mr-2" style={{ color: "#F47B56" }}>•</span>
+                              A cover letter explaining your passion for travel and why you want to join
+                              WANDER TRIBE
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-travel-terracotta mr-2" style={{ color: "#F47B56" }}>•</span>
+                              Portfolio of work (if applicable to your field)
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-travel-terracotta mr-2" style={{ color: "#F47B56" }}>•</span>
+                              Types of positions you're interested in
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Right Side - Job Information */}
+                      <div className="text-left col-span-1">
+                        <h3 className="text-2xl font-bold mb-6 text-travel-earth" style={{ color: "#4AA3DF" }}>
+                          Job Information
+                        </h3>
+
+                        <div className="space-y-6">
+                          <div>
+                            <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Department Name</p>
+                            <p className="text-travel-earth-dark font-bold">Trip Leaders</p>
+                          </div>
+
+                          <div>
+                            <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Date Opened</p>
+                            <p className="text-travel-earth-dark font-bold">03/20/2025</p>
+                          </div>
+
+                          <div>
+                            <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Job Type</p>
+                            <p className="text-travel-earth-dark font-bold">Full time</p>
+                          </div>
+
+                          <div>
+                            <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Industry</p>
+                            <p className="text-travel-earth-dark font-bold">Travel and Tourism</p>
+                          </div>
+
+                          <div className="flex items-center justify-start mt-2">
+                            <span className="inline-flex items-center justify-center w-6 h-6 mr-2 rounded-full bg-travel-earth/10" style={{ backgroundColor: "rgba(74, 163, 223, 0.1)" }}>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-travel-earth" style={{ color: "#4AA3DF" }}>
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 8v4M12 16h.01"></path>
+                              </svg>
+                            </span>
+                            <p className="font-medium text-travel-earth" style={{ color: "#4AA3DF" }}>Remote Job</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Testimonials */}
+        {/* <section className="py-16 bg-travel-teal/10">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
@@ -227,8 +280,8 @@ const Careers = () => {
         </div>
       </section> */}
 
-      {/* Career Growth & Learning */}
-      {/* <section className="py-16 bg-white">
+        {/* Career Growth & Learning */}
+        {/* <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -293,23 +346,23 @@ const Careers = () => {
         </div>
       </section> */}
 
-      {/* Call to Action */}
-      <section className="py-16 bg-travel-earth text-white border-b-2 border-travel-earth-light">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Begin Your Journey With Us?
-          </h2>
-          <p className="text-white/80 max-w-3xl mx-auto mb-8">
-            Even without current openings, we're always looking for exceptional talent to join our team when opportunities arise.
-          </p>
-          <Button className="bg-travel-sand hover:bg-travel-sand/90 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300">
-            Submit Your Application
-          </Button>
-        </div>
-      </section>
+        {/* Call to Action */}
+        <section className="py-16 bg-travel-earth text-white border-b-2 border-travel-earth-light">
+          <div className="container-custom text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Begin Your Journey With Us?
+            </h2>
+            <p className="text-white/80 max-w-3xl mx-auto mb-8">
+              Even without current openings, we're always looking for exceptional talent to join our team when opportunities arise.
+            </p>
+            <Button className="bg-travel-sand hover:bg-travel-sand/90 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300">
+              Submit Your Application
+            </Button>
+          </div>
+        </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </div>
   );
 };
