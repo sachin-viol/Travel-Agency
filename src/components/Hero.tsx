@@ -13,20 +13,20 @@ const Hero = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      {/*<video
+      <video
         ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
-        className="absolute w-full h-full object-cover top-7"
+        className="absolute w-full h-full object-cover"
       >
-        <source src="/WanderTribeHero.mp4" type="video/mp4" /> 
+        {/* <source src="/WanderTribeHero.mp4" type="video/mp4" />  */}
         <source src="https://videos.pexels.com/video-files/5192722/5192722-uhd_2560_1440_24fps.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>*/}
+      </video>
 
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80" alt="Background" className="absolute w-full h-full object-cover" />
+      {/* <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80" alt="Background" className="absolute w-full h-full object-cover" /> */}
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
