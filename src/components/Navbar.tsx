@@ -137,8 +137,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-        ? 'bg-white shadow-md py-1'
-        : ' py-0'
+        ? 'bg-white shadow-md py-6'
+        : ' md:py-6 py-4'
         }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -152,7 +152,7 @@ const Navbar = () => {
               Tribe
             </span>
           </div> */}
-          <img src="/LogoBGRemoved.png" alt="LOGO" className='w-[164px]'/>
+          <img src="/Logo1.png" alt="LOGO" className='w-[164px]'/>
             
           
         </Link>
