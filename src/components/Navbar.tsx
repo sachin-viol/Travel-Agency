@@ -152,7 +152,7 @@ const Navbar = () => {
               Tribe
             </span>
           </div> */}
-          <img src="/LogoBGRemoved.png" alt="LOGO" className='w-36'/>
+          <img src="/LogoBGRemoved.png" alt="LOGO" className='w-[164px]'/>
             
           
         </Link>
