@@ -2,62 +2,19 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, User, Search, Bookmark, ArrowRight, Mail } from 'lucide-react';
 import PageHero from '@/components/PageHero';
+import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
     id: 1,
-    title: "10 Must-Visit Hidden Gems in Switzerland",
-    excerpt: "Discover the less-traveled paths and secret spots that make Switzerland a paradise for adventurous souls.",
+    title: "Why We Travel: The Story Behind Wander Tribe",
+    excerpt: "Discover the heart of Wander Tribe — our passion for travel, hidden gems, and the people and places that inspire us to explore.",
+    slug: "why-we-travel-wander-tribe",
     image: "https://images.unsplash.com/photo-1527668752968-14dc70a27c95",
-    date: "May 12, 2024",
-    author: "Emma Wilson",
+    date: "April 30, 2022",
+    author: "Jinit Thakkar",
     category: "Destinations"
   },
-  {
-    id: 2,
-    title: "A Foodie's Guide to Japanese Street Food",
-    excerpt: "From takoyaki to taiyaki, explore the vibrant world of Japanese street food that will tantalize your taste buds.",
-    image: "https://images.unsplash.com/photo-1535189043414-47a3c49a0bed",
-    date: "April 29, 2024",
-    author: "Michael Chen",
-    category: "Food & Culture"
-  },
-  {
-    id: 3,
-    title: "Packing Essentials for Your Costa Rica Adventure",
-    excerpt: "Everything you need to know about what to bring for a perfect Costa Rican exploration, from rainforests to beaches.",
-    image: "https://images.unsplash.com/photo-1503756234508-e32369269deb",
-    date: "April 15, 2024",
-    author: "Carlos Rodriguez",
-    category: "Travel Tips"
-  },
-  {
-    id: 4,
-    title: "How to Make Friends While Traveling Solo",
-    excerpt: "Practical advice for building meaningful connections with fellow travelers and locals during your solo adventures.",
-    image: "https://images.unsplash.com/photo-1479660095429-2cf4e1360472",
-    date: "March 27, 2024",
-    author: "Sarah Johnson",
-    category: "Solo Travel"
-  },
-  {
-    id: 5,
-    title: "Sustainable Travel: Minimizing Your Footprint",
-    excerpt: "Simple ways to make your travels more eco-friendly without sacrificing the quality of your experience.",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828",
-    date: "March 10, 2024",
-    author: "David Thompson",
-    category: "Responsible Travel"
-  },
-  {
-    id: 6,
-    title: "Photography Tips for Capturing Epic Landscapes",
-    excerpt: "Expert advice on how to take stunning landscape photos that will make your friends and family say 'wow'.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-    date: "February 25, 2024",
-    author: "Jessica Lee",
-    category: "Photography"
-  }
 ];
 
 const BlogCategories = () => {
@@ -161,7 +118,7 @@ const Blog = () => {
       <Navbar />
       <PageHero
         title="Blogs"
-        description="Why We Travel: The Story Behind Wander Tribe"
+        description="Explore travel tales and inspiration from the Wander Tribe."
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
       />
       <div className="py-16">
@@ -204,17 +161,19 @@ const Blog = () => {
                         </div>
                       </div>
                       <button className="w-full mt-6 py-2 btn-outline transition-colors flex items-center justify-center">
-                        <span>Read More</span>
-                        <ArrowRight size={16} className="ml-2" />
+                        <Link to={`/blogs/${post.slug}`} className="flex items-center">
+                          <span>Read More</span>
+                          <ArrowRight size={16} className="ml-2" />
+                        </Link>
                       </button>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-12 text-center">
+              {/* <div className="mt-12 text-center">
                 <button className="btn-primary">Load More Articles</button>
-              </div>
+              </div> */}
             </div>
 
             <div className="lg:w-1/3">

@@ -28,7 +28,7 @@ const Hero = () => {
 
       {/* <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80" alt="Background" className="absolute w-full h-full object-cover" /> */}
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-slate-400/10 to-black/10 z-10"></div>
 
       {/* Content */}
       <div className="container-custom h-full flex flex-col justify-center items-center text-center">

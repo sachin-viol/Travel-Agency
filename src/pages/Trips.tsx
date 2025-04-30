@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar';
+import PageHero from '@/components/PageHero';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, MapPin, Filter, Globe, Award, Heart, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import PageHero from '@/components/PageHero';
 import { useState } from 'react';
 
 const trips = [
@@ -127,9 +127,6 @@ const TripSearchBanner = () => {
     </div>
   );
 };
-
-
-
 
 const Trips = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
