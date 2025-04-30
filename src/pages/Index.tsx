@@ -40,7 +40,7 @@ const Index = () => {
       <UpcomingTrips />
       <GuidedTravel />
       <JoinNow />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Newsletter />
       {/* <BookingSteps /> */}
       {/* <WhyChooseUs />
