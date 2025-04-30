@@ -70,8 +70,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Our Location</h3>
                     <p className="text-gray-600">
-                      123 Adventure Way, Suite 101<br />
-                      San Francisco, CA 94103
+                      Rosa Elite 1st Floor
+                      <br />
+                      Thane West 400615
                     </p>
                   </div>
                 </div>
@@ -83,8 +84,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Email Us</h3>
                     <p className="text-gray-600">
-                      info@company.com<br />
-                      bookings@company.com
+                      info@wandertribe.co.in
                     </p>
                   </div>
                 </div>
@@ -96,8 +96,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Call Us</h3>
                     <p className="text-gray-600">
-                      (415) 555-2671<br />
-                      (800) 123-4567 (Toll-free)
+                      +91 9326412687
                     </p>
                   </div>
                 </div>
@@ -221,8 +220,7 @@ const Contact = () => {
           </div>
 
           <div className="bg-travel-cloud-white rounded-lg shadow-md overflow-hidden h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580958158c0f1%3A0x5ce35a6920576254!2sSan%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.787612610198!2d72.94541208623305!3d19.286983737784173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb0324914c3f%3A0xb21bc2c2e8a8363c!2sRosa%20Elite%20A%20CHSL!5e0!3m2!1sen!2sin!4v1745953734660!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

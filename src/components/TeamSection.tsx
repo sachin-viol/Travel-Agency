@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Maria Pereira",
     position: "CEO, Founder",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    image: "/unnamed.png",
     bio: "From wandering through bustling cities to exploring hidden corners of the world, Maria felt most alive when she’s on the move. What began as solo adventures soon turned into unforgettable journeys with friends, deepening her love for new places and cultures. Travel isn’t just a passion for her it’s a way of life. Inspired by her own experiences, she founded this company to create meaningful, immersive journeys that help others craft memories beyond the guidebooks—authentic, personal, and unforgettable.",
     social: {
       linkedin: "#",
@@ -16,7 +16,7 @@ const teamMembers = [
   {
     name: "Jinit Thakkar",
     position: "Co-Founder, Voluntary Assistance and Tech Advisor",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    image: "/jinit.jpeg",
     bio: "Jinit has always held a deep passion for the way travel connects individuals to diverse places, cultures, and narratives. Motivated by this belief, he co-founded the company with the vision of enabling others to experience the authentic essence of each destination. Beyond iconic landmarks, he emphasizes the importance of engaging with local cuisine, customs, and daily life—elements that truly define a place. His mission is to simplify and enrich the travel experience, empowering people to explore, discover, and appreciate the world in its fullest form.",
     social: {
       linkedin: "#",

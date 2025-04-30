@@ -138,7 +138,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
         ? 'bg-white shadow-md py-2'
-        : 'bg-white py-4'
+        : ' py-4'
         }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -152,7 +152,7 @@ const Navbar = () => {
               Tribe
             </span>
           </div> */}
-          <img src="/Logo.jpeg" alt="LOGO" className='w-28'/>
+          <img src="/LogoBGRemoved.png" alt="LOGO" className='w-36'/>
             
           
         </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
           <div className="relative group">
             <button
               onClick={() => toggleDropdown('experience')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
+              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
                 } font-medium transition-colors duration-300`}
             >
               Experience
@@ -207,7 +207,7 @@ const Navbar = () => {
           <div className="relative group">
             <button
               onClick={() => toggleDropdown('aboutUs')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
+              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
                 } font-medium transition-colors duration-300`}
             >
               About Us
@@ -379,7 +379,7 @@ const Navbar = () => {
 const NavLink = ({ href, text, scrolled }) => {
   return (
     <Link to={href}>
-      <div className={`cursor-pointer ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-travel-earth-light hover:text-blue-200'
+      <div className={`cursor-pointer ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
         } font-medium transition-colors duration-300`}>
         {text}
       </div>
