@@ -11,7 +11,7 @@ const blogPosts = [
     excerpt: "Discover the heart of Wander Tribe — our passion for travel, hidden gems, and the people and places that inspire us to explore.",
     slug: "why-we-travel-wander-tribe",
     image: "https://images.unsplash.com/photo-1527668752968-14dc70a27c95",
-    date: "April 30, 2022",
+    date: "April 30, 2025",
     author: "Jinit Thakkar",
     category: "Destinations"
   },
