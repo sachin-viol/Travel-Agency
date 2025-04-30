@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="min-h-screen ">
       <Navbar />
-      <PageHero 
+      <PageHero
         title="About Us"
         description="Learn about our story, mission, and the passionate team behind WANDER TRIBE"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
@@ -24,13 +24,21 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4 text-travel-earth-light">Our Story</h2>
               <p className="text-travel-slate-gray mb-4">
-                Founded in 2010 by a group of passionate travelers who believed that travel should be more than just checking off bucket list items, WANDER TRIBE was born from a desire to create meaningful connections through immersive experiences.
+                At Wander Tribe, we believe travel is far more than a checklist of destinations — it is a deeply personal and transformative experience. Our approach is rooted in authenticity, cultural connection, and unforgettable moments that go beyond the ordinary.
               </p>
               <p className="text-travel-slate-gray mb-4">
-                After years of independent travel across all seven continents, our founders recognized that the most memorable moments came from authentic cultural exchanges and connections with like-minded adventurers.
+                Our journey began with a genuine love for exploration — from the energy of major cities to the charm of remote corners, from solo adventures to shared experiences with friends. What began as a personal passion evolved into a clear purpose: to create meaningful journeys that connect people not only to places, but to cultures and to one another.
+              </p>
+              <p className="text-travel-slate-gray mb-4">
+                Our journey began with a genuine love for exploration — from the energy of major cities to the charm of remote corners, from solo adventures to shared experiences with friends. What began as a personal passion evolved into a clear purpose: to create meaningful journeys that connect people not only to places, but to cultures and to one another.
+              </p>
+              <p className="text-travel-slate-gray mb-4">
+                Wander Tribe was founded to share this spirit of exploration with travelers who seek more than surface-level tourism. We thoughtfully design immersive trips that allow individuals to truly engage with their surroundings — whether they’re in search of adventure, reflection, or a balance of both.
               </p>
               <p className="text-travel-slate-gray">
-                Today, we're proud to have helped thousands of travelers discover the world's hidden wonders while forming lasting friendships and creating unforgettable memories.
+                Today, we are proud to be cultivating a community — a tribe — of curious, compassionate, and adventurous individuals who believe in the power of travel to inspire and transform.
+                <br />
+                Join us on the journey — because the world is too extraordinary to remain still.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
