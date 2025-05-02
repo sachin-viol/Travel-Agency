@@ -281,7 +281,7 @@ const Navbar = () => {
             <MobileNavLink href="/" text="Home" />
 
             {/* Mobile Trips Dropdown */}
-            <div className="py-2">
+            {/* <div className="py-2">
               <button
                 onClick={() => toggleDropdown('mobileTrips')}
                 className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md"
@@ -307,8 +307,9 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
+            <MobileNavLink href="/trips" text="Trips" />
             <MobileNavLink href="/blogs" text="Blogs" />
 
             {/* Mobile Experience Dropdown */}

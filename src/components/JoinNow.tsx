@@ -118,7 +118,7 @@ const JoinNow = () => {
         
         <div className="flex justify-center mt-12">
           <a 
-            href="https://instagram.com/wandertribe.official" 
+            href="https://www.instagram.com/wandertribe.co" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center px-6 py-3 text-white transition-colors bg-travel-earth rounded-full hover:bg-travel-earth/90"

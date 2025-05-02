@@ -18,11 +18,11 @@ const Footer = () => {
               Join our tribe and discover the world's most breathtaking destinations with like-minded travelers.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/wandertribe.co" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
+                <Instagram size={20} />
               </a>
               <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
-                <Instagram size={20} />
+                <Facebook size={20} />
               </a>
               <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
                 <Twitter size={20} />
