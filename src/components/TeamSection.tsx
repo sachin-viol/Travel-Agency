@@ -5,8 +5,8 @@ import Navbar from './Navbar';
 const teamMembers = [
   {
     name: "Maria Pereira",
-    position: "CEO, Founder",
-    image: "/unnamed.png",
+    position: "Founder, CEO",
+    image: "/pic2.2.png",
     bio: "From wandering through bustling cities to exploring hidden corners of the world, Maria felt most alive when she’s on the move. What began as solo adventures soon turned into unforgettable journeys with friends, deepening her love for new places and cultures. Travel isn’t just a passion for her it’s a way of life. Inspired by her own experiences, she founded this company to create meaningful, immersive journeys that help others craft memories beyond the guidebooks—authentic, personal, and unforgettable.",
     social: {
       linkedin: "#",
@@ -15,8 +15,8 @@ const teamMembers = [
   },
   {
     name: "Jinit Thakkar",
-    position: "Co-Founder, Voluntary Assistance and Tech Advisor",
-    image: "/jinit.jpeg",
+    position: "Founder, Volunteer Advisor",
+    image: "/pic1.1.png",
     bio: "Jinit has always held a deep passion for the way travel connects individuals to diverse places, cultures, and narratives. Motivated by this belief, he co-founded the company with the vision of enabling others to experience the authentic essence of each destination. Beyond iconic landmarks, he emphasizes the importance of engaging with local cuisine, customs, and daily life—elements that truly define a place. His mission is to simplify and enrich the travel experience, empowering people to explore, discover, and appreciate the world in its fullest form.",
     social: {
       linkedin: "#",
@@ -28,7 +28,7 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section className="py">
-      
+
       <div className="container-custom">
         <div className="text-center mb-16">
           {/* <h2 className="text-4xl font-bold mb-4 text-travel-earth-light">Meet Our Team</h2>

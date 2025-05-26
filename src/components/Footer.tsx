@@ -18,16 +18,14 @@ const Footer = () => {
               Join our tribe and discover the world's most breathtaking destinations with like-minded travelers.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/wandertribe.co" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
+              <a href="https://www.instagram.com/wandertribe.co?igsh=emZpaTZldHB4eGxx&utm_source=qr" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
+              <a href="https://www.facebook.com/share/16a4KcmWwz/?mibextid=wwXIfr" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
+
+              <a href="https://youtube.com/@justwandertribe?si=8Gh47pavwBFOMJGI" className="text-white/80 hover:text-travel-sand transition-colors hover-lift">
                 <Youtube size={20} />
               </a>
             </div>

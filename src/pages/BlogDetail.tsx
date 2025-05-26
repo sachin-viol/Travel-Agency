@@ -17,31 +17,35 @@ const BlogDetails = () => {
     <div className="min-h-screen">
       <Navbar />
       <PageHero
-        title="Why We Travel: The Story Behind Wander Tribe"
+        title={blog.title}
         description=""
-        backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+        backgroundImage={`${blog.heroImage}`}
       />
 
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">{blog.title}</h1> */}
 
-        <div className="w-full h-[400px] mb-10 rounded-xl overflow-hidden">
+        {/* <div className="w-full h-[400px] mb-10 rounded-xl overflow-hidden">
           <img
             src={blog.heroImage}
             alt={blog.title}
             className="w-full h-full object-cover rounded-xl"
           />
-        </div>
+        </div> */}
 
         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
           {blog.content.map((para, index) => (
-            <p key={index}>{para}</p>
+            <p
+              key={index}
+              className="whitespace-pre-line"
+              dangerouslySetInnerHTML={{ __html: para }}
+            />
           ))}
         </div>
 
         {blog.gallery && blog.gallery.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-2xl font-semibold mb-4">Gallery</h2>
+            <h2 className="text-travel-earth-light text-2xl font-semibold mb-4">Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {blog.gallery.map((imgUrl, idx) => (
                 <img
@@ -57,10 +61,10 @@ const BlogDetails = () => {
 
         <div className="mt-12 space-y-4">
           {blog.ctas?.map((ctaItem, idx) => (
-            <div key={idx}>
+            <div key={idx} className='flex justify-center'>
               <a
-                href={ctaItem.link}
-                className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+                href=""
+                className="inline-block bg-travel-earth text-white px-6 py-2 rounded hover:bg-travel-earth-light transition"
               >
                 {ctaItem.label}
               </a>

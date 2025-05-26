@@ -15,6 +15,16 @@ const blogPosts = [
     author: "Jinit Thakkar",
     category: "Destinations"
   },
+  {
+    id: 2,
+    title: "The Ultimate First-Timer’s Guide: How to Plan Your Trip with Wander Tribe",
+    excerpt: "Dreaming of your next adventure but not sure where to start?",
+    slug: "how-to-plan-your-trip-with-wander-tribe",
+    image: "https://images.pexels.com/photos/9943247/pexels-photo-9943247.jpeg",
+    date: "May 26, 2025",
+    author: "Jinit Thakkar",
+    category: "Destinations"
+  },
 ];
 
 const BlogCategories = () => {

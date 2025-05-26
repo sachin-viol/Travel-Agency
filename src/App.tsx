@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import BlogDetail from "./pages/BlogDetail";
+import Feedback from "./pages/Feedback";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/cancellation-policy" element={<CancellationPolicy />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/feedback" element={<Feedback />} />
           <Route path="/team" element={<Team />} />
           <Route path="/trips/:slug" element={<TripDetail />} />
           <Route path="/blogs/:slug" element={<BlogDetail />} />

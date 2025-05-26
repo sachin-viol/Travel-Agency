@@ -158,7 +158,7 @@ const Careers = () => {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
                           <p className="text-center font-medium text-travel-earth">
-                            Send your application to: <span className="text-travel-terracotta" style={{ color: "#F47B56" }}>careers@wanderTRIBE.com</span>
+                            Send your application to: <span className="text-travel-terracotta" style={{ color: "#F47B56" }}>career@wandertribe.co.in</span>
                           </p>
                         </div>
 

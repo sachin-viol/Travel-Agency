@@ -58,6 +58,7 @@ const GuidedTravel = () => {
 
             <div className="relative mb-16">
               <div className="absolute sm:-left-8 sm:top-0 -left-5 top-2">
+                
                 <div className="sm:w-6 sm:h-6 w-4 h-4 bg-travel-teal rounded-full"></div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-travel-earth-light">Expertly Planned</h3>

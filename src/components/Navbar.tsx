@@ -130,7 +130,8 @@ const Navbar = () => {
       { label: 'Meet Our Team', href: '/team' },
       { label: 'Career', href: '/careers' },
       { label: 'FAQ', href: '/faq' },
-      { label: 'Contact', href: '/contact' }
+      { label: 'Contact', href: '/contact' },
+      { label: 'Feedback', href: '/feedback' }
     ]
   };
 
@@ -152,7 +153,7 @@ const Navbar = () => {
               Tribe
             </span>
           </div> */}
-          <img src="/Logo1.png" alt="LOGO" className='w-[250px]'/>
+          <img src="/Logo1.png" alt="LOGO" className='w-[210px]'/>
             
           
         </Link>

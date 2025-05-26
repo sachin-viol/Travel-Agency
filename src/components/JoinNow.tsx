@@ -19,7 +19,7 @@ const INSTAGRAM_IMAGES = [
     comments: 45
   },
   {
-    id: 3, 
+    id: 3,
     url: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     alt: 'Mountain landscape with pine trees and deer',
     likes: 892,
@@ -62,40 +62,38 @@ const JoinNow = () => {
   }, []);
 
   return (
-    <section 
+    <section
       id="community-section"
-      className={`py-16 bg-blue-50 transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`py-16 bg-blue-50 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
     >
       <div className="container px-4 mx-auto">
         <h2 className="mb-8 text-4xl font-bold text-center text-travel-earth-light">
           Join Our Tribe
         </h2>
-        
+
         <p className="max-w- mx-auto mb-12 text-lg text-center text-slate-600">
-          Follow us on Instagram <span className="font-semibold">@wandertribe.official</span> and share your travel moments with us using <span className="font-semibold">#WanderTribe</span>.
+          Follow us on Instagram <span className="font-semibold"><a href="https://www.instagram.com/wandertribe.co?igsh=emZpaTZldHB4eGxx&utm_source=qr">@wandertribe.com</a></span> and share your travel moments with us using <span className="font-semibold">#WanderTribe</span>.
         </p>
-        
+
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {INSTAGRAM_IMAGES.map((image) => (
-            <div 
+            <div
               key={image.id}
               className="relative overflow-hidden transition-transform duration-300 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1"
               onMouseEnter={() => setIsHovered(image.id)}
               onMouseLeave={() => setIsHovered(null)}
             >
-              <img 
-                src={image.url} 
+              <img
+                src={image.url}
                 alt={image.alt}
                 className="object-cover w-full h-64 transition-transform duration-500 hover:scale-105"
               />
-              
+
               {/* Overlay that appears on hover */}
-              <div 
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${
-                  isHovered === image.id ? 'opacity-100' : 'opacity-0'
-                }`}
+              <div
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${isHovered === image.id ? 'opacity-100' : 'opacity-0'
+                  }`}
               >
                 <div className="flex items-center gap-4 text-white">
                   <div className="flex items-center">
@@ -115,11 +113,11 @@ const JoinNow = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="flex justify-center mt-12">
-          <a 
-            href="https://www.instagram.com/wandertribe.co" 
-            target="_blank" 
+          <a
+            href="https://www.instagram.com/wandertribe.co"
+            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center px-6 py-3 text-white transition-colors bg-travel-earth rounded-full hover:bg-travel-earth/90"
           >
