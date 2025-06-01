@@ -13,16 +13,25 @@ const Hero = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute w-full h-full object-cover">
-        <source src="./vid.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="absolute w-full h-full inset-0">
+        <img
+          src="/vid_backgound.jpg"
+          alt="Background"
+          className="w-full h-full object-cover absolute inset-0 z-0"
+          style={{ transition: "opacity 0.5s" }}
+        />
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute w-full h-full object-cover bg-gray-700 z-10"
+          style={{ transition: "opacity 0.5s" }}>
+          <source src="./vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       {/* Enhanced Overlay with stronger gradient */}
       <div className="absolute inset-0 bg-black/20 z-10"></div>
@@ -58,7 +67,7 @@ const Hero = () => {
                 Let's Book your next trip with US.{" "}
                 <a
                   href="#"
-                  className="font-semibold text-travel-terracotta hover:text-travel-earth transition-colors">
+                  className="font-semibold text-travel-terracotta hover:text-travel-earth transition-colors duration-300">
                   <span className="absolute inset-0" aria-hidden="true"></span>
                   Contact Us <span aria-hidden="true">&rarr;</span>
                 </a>
