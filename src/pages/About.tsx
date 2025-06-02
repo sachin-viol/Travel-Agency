@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import TeamSection from '@/components/TeamSection';
 import CompanyValues from '@/components/CompanyValues';
 import PageHero from '@/components/PageHero';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -86,7 +87,8 @@ const About = () => {
       <div className="py-16 bg-travel-earth/30">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-8 text-travel-earth-light">Ready to Start Your Adventure?</h2>
-          <button className="btn-primary">Explore Our Trips</button>
+          <Link to="/trips"><button className="btn-primary">
+            Explore Our Trips</button></Link>
         </div>
       </div>
 
@@ -96,3 +98,4 @@ const About = () => {
 };
 
 export default About;
+

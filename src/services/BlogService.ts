@@ -59,7 +59,7 @@ export const blogDetails = [
       "<hr class='list-decimal pl-6 space-y-2'>",
 
       "<li><b>Bonus: Pack Your Bags and Your Curiosity</b> <br/>Our trips are designed to create space for spontaneity, connection, and unforgettable stories.All you need to bring is an open heart (and maybe a good pair of walking shoes).</li>",
-      '<br/><li>We can’t wait to see where the road takes us — together.<br/><b>Let’s Wander Together.</b></li>',
+      "<br/><li>We can’t wait to see where the road takes us — together.<br/><b>Let’s Wander Together.</b></li>",
       "<hr class='list-decimal pl-6 space-y-2'>",
 
       "<i>👉 Find your next adventure <a href='/trips'><b>Trips Page</b></a> <br/>👉 Join our community on <a href='https://www.instagram.com/wandertribe.co?igsh=emZpaTZldHB4eGxx&utm_source=qr'><b>Instagram</b></a></i><br/><br/> Visit our  to explore upcoming adventures and book your next unforgettable experience with Wander Tribe.",
