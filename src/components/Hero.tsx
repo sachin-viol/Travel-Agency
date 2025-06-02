@@ -15,11 +15,7 @@ const Hero = () => {
       {/* Video Background */}
       <div className="absolute w-full h-full inset-0">
         <img
-<<<<<<< HEAD
-          src="./vid_backgound.jpg"
-=======
           src="/vid_backgound.jpg"
->>>>>>> 49feb8369c6ade47f5c6ea57e2689dc67ddaac7e
           alt="Background"
           className="w-full h-full object-cover absolute inset-0 z-0"
           style={{ transition: "opacity 0.5s" }}
@@ -70,17 +66,10 @@ const Hero = () => {
               <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-300 ring-1 ring-travel-earth/30 hover:ring-travel-earth/80 transition-all">
                 Let's Book your next trip with US.{" "}
                 <a
-<<<<<<< HEAD
                   href="/contact"
                   className="font-semibold text-travel-terracotta hover:text-travel-earth transition-colors duration-300">
                   <span className="absolute inset-0" aria-hidden="true"></span>
                   Contact us <span aria-hidden="true">&rarr;</span>
-=======
-                  href="#"
-                  className="font-semibold text-travel-terracotta hover:text-travel-earth transition-colors duration-300">
-                  <span className="absolute inset-0" aria-hidden="true"></span>
-                  Contact Us <span aria-hidden="true">&rarr;</span>
->>>>>>> 49feb8369c6ade47f5c6ea57e2689dc67ddaac7e
                 </a>
               </div>
             </div>
