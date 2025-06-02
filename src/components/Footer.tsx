@@ -41,7 +41,7 @@ const Footer = () => {
               {[
                 { to: "/about", label: "About Us" },
                 { to: "/trips", label: "Our Trips" },
-                { to: "/blog", label: "Travel Blog" },
+                { to: "/blogs", label: "Travel Blog" },
                 { to: "/faq", label: "FAQ" },
                 { to: "/contact", label: "Contact Us" }
               ].map((link, index) => (
