@@ -1,4 +1,3 @@
-
 // import { useState, useEffect } from 'react';
 // import { Menu, X, Search, Phone } from 'lucide-react';
 // import { Link } from 'react-router-dom';
@@ -49,7 +48,7 @@
 //     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2 text-travel-earth-light' : ' py-4 '}`}>
 //       <div className="container flex justify-evenly items-center px-4">
 //         <div className='flex items-center space-x-4 w-full'>
-//           <Link to="/" className="text-2xl font-bold text-travel-earth">WANDER <span className='text-travel-warm-orange'>TRIBE</span> 
+//           <Link to="/" className="text-2xl font-bold text-travel-earth">WANDER <span className='text-travel-warm-orange'>TRIBE</span>
 //           {/* <img src="/unnamed.ico" alt="Logo" className='w-16' /> */}
 //           </Link>
 //         </div>
@@ -78,9 +77,8 @@
 
 // export default Navbar;
 
-
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -96,9 +94,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -117,32 +115,35 @@ const Navbar = () => {
   // Define dropdown menus
   const dropdownMenus = {
     trips: [
-      { label: 'Upcoming', href: '/#upcoming-trips' },
-      { label: 'Ongoing', href: '/trips' },
-      { label: 'Past', href: '/past-trips' }
+      { label: "Upcoming", href: "/#upcoming-trips" },
+      { label: "Ongoing", href: "/trips" },
+      { label: "Past", href: "/past-trips" },
     ],
     experience: [
-      { label: 'Reviews', href: '/reviews' },
-      { label: 'Gallery', href: '/gallery' }
+      { label: "Reviews", href: "/reviews" },
+      { label: "Gallery", href: "/gallery" },
     ],
     aboutUs: [
-      { label: 'Our Story', href: '/about' },
-      { label: 'Meet Our Team', href: '/team' },
-      { label: 'Career', href: '/careers' },
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Contact', href: '/contact' },
-      { label: 'Feedback', href: '/feedback' }
-    ]
+      { label: "Our Story", href: "/about" },
+      { label: "Meet Our Team", href: "/team" },
+      { label: "Career", href: "/careers" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact", href: "/contact" },
+      { label: "Feedback", href: "/feedback" },
+    ],
   };
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-        ? 'bg-white shadow-md py-6'
-        : ' md:py-6 py-4'
-        }`}
-    >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      className={`fixed w-full z-50 transition-all duration-300  ${
+        scrolled ? "bg-white shadow-md py-6" : " md:py-6 py-4"
+      }`}>
+      <div
+        className={`container mx-auto px-4 flex justify-between items-center   ${
+          scrolled
+            ? ""
+            : " border-2 border-white/30 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-lg"
+        }`}>
         {/* Logo */}
         <Link to="/">
           {/* <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
@@ -153,9 +154,7 @@ const Navbar = () => {
               Tribe
             </span>
           </div> */}
-          <img src="/Logo1.png" alt="LOGO" className='w-[210px]'/>
-            
-          
+          <img src="/Logo1.png" alt="LOGO" className="w-[210px]" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -207,17 +206,18 @@ const Navbar = () => {
           {/* About Us Dropdown */}
           <div className="relative group">
             <button
-              onClick={() => toggleDropdown('aboutUs')}
-              className={`flex items-center ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
-                } font-medium transition-colors duration-300`}
-            >
+              onClick={() => toggleDropdown("aboutUs")}
+              className={`flex items-center ${
+                scrolled
+                  ? "text-travel-earth-light hover:text-blue-600"
+                  : "text-white hover:text-blue-200"
+              } font-medium transition-colors duration-300`}>
               About Us
               <svg
                 className="ml-1 h-4 w-4"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -228,10 +228,13 @@ const Navbar = () => {
             </button>
             <div
               className={`absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 transform opacity-0 scale-95 
-                ${activeDropdown === 'aboutUs' ? 'transform-none opacity-100' : ''} 
+                ${
+                  activeDropdown === "aboutUs"
+                    ? "transform-none opacity-100"
+                    : ""
+                } 
                 transition-all duration-200 origin-top-right
-                group-hover:transform-none group-hover:opacity-100`}
-            >
+                group-hover:transform-none group-hover:opacity-100`}>
               {dropdownMenus.aboutUs.map((item) => (
                 <Link key={item.label} to={item.href}>
                   <div className="block px-4 py-2 text-travel-earth-light hover:bg-travel-earth/20">
@@ -247,14 +250,14 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
-            className={`focus:outline-none ${scrolled ? 'text-travel-earth-light' : 'text-travel-earth-light'}`}
-          >
+            className={`focus:outline-none ${
+              scrolled ? "text-travel-earth-light" : "text-travel-earth-light"
+            }`}>
             <svg
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+              stroke="currentColor">
               {mobileMenuOpen ? (
                 <path
                   strokeLinecap="round"
@@ -316,20 +319,27 @@ const Navbar = () => {
             {/* Mobile Experience Dropdown */}
             <div className="py-2">
               <button
-                onClick={() => toggleDropdown('mobileExperience')}
-                className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md"
-              >
+                onClick={() => toggleDropdown("mobileExperience")}
+                className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md">
                 <span>Experience</span>
                 <svg
-                  className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === 'mobileExperience' ? 'transform rotate-180' : ''}`}
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    activeDropdown === "mobileExperience"
+                      ? "transform rotate-180"
+                      : ""
+                  }`}
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
-              {activeDropdown === 'mobileExperience' && (
+              {activeDropdown === "mobileExperience" && (
                 <div className="pl-4 mt-1 space-y-1">
                   {dropdownMenus.experience.map((item) => (
                     <Link key={item.label} to={item.href}>
@@ -345,20 +355,27 @@ const Navbar = () => {
             {/* Mobile About Us Dropdown */}
             <div className="py-2">
               <button
-                onClick={() => toggleDropdown('mobileAboutUs')}
-                className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md"
-              >
+                onClick={() => toggleDropdown("mobileAboutUs")}
+                className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md">
                 <span>About Us</span>
                 <svg
-                  className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === 'mobileAboutUs' ? 'transform rotate-180' : ''}`}
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    activeDropdown === "mobileAboutUs"
+                      ? "transform rotate-180"
+                      : ""
+                  }`}
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
-              {activeDropdown === 'mobileAboutUs' && (
+              {activeDropdown === "mobileAboutUs" && (
                 <div className="pl-4 mt-1 space-y-1">
                   {dropdownMenus.aboutUs.map((item) => (
                     <Link key={item.label} to={item.href}>
@@ -381,7 +398,11 @@ const Navbar = () => {
 const NavLink = ({ href, text, scrolled }) => {
   return (
     <Link to={href}>
-      <div className={`cursor-pointer ${scrolled ? 'text-travel-earth-light hover:text-blue-600' : 'text-white hover:text-blue-200'
+      <div
+        className={`cursor-pointer ${
+          scrolled
+            ? "text-travel-earth-light hover:text-blue-600"
+            : "text-white hover:text-blue-200"
         } font-medium transition-colors duration-300`}>
         {text}
       </div>
@@ -401,4 +422,3 @@ const MobileNavLink = ({ href, text }) => {
 };
 
 export default Navbar;
-
