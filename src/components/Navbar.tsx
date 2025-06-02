@@ -57,13 +57,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300  ${scrolled ? "bg-white shadow-md py-6" : " md:py-6 py-4"
-        }`}>
+      className={`fixed w-full z-50 transition-all duration-300  ${
+        scrolled ? "bg-white shadow-md py-6" : " md:py-6 py-4"
+      }`}>
       <div
-        className={`container mx-auto px-4 flex justify-between items-center   ${scrolled
-          ? ""
-          : " border-2 border-white/30 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-lg"
-          }`}>
+        className={`container mx-auto px-4 flex justify-between items-center   ${
+          scrolled
+            ? ""
+            : " border-2 border-white/30 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-lg"
+        }`}>
         {/* Logo */}
         <Link to="/">
           {/* <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
@@ -127,10 +129,11 @@ const Navbar = () => {
           <div className="relative group">
             <button
               onClick={() => toggleDropdown("aboutUs")}
-              className={`flex items-center ${scrolled
-                ? "text-travel-earth-light hover:text-blue-600"
-                : "text-white hover:text-blue-200"
-                } font-medium transition-colors duration-300`}>
+              className={`flex items-center ${
+                scrolled
+                  ? "text-travel-earth-light hover:text-blue-600"
+                  : "text-white hover:text-blue-200"
+              } font-medium transition-colors duration-300`}>
               About Us
               <svg
                 className="ml-1 h-4 w-4"
@@ -147,9 +150,10 @@ const Navbar = () => {
             </button>
             <div
               className={`absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 transform opacity-0 scale-95 
-                ${activeDropdown === "aboutUs"
-                  ? "transform-none opacity-100"
-                  : ""
+                ${
+                  activeDropdown === "aboutUs"
+                    ? "transform-none opacity-100"
+                    : ""
                 } 
                 transition-all duration-200 origin-top-right
                 group-hover:transform-none group-hover:opacity-100`}>
@@ -168,8 +172,9 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
-            className={`focus:outline-none ${scrolled ? "text-travel-earth-light" : "text-travel-earth-light"
-              }`}>
+            className={`focus:outline-none ${
+              scrolled ? "text-travel-earth-light" : "text-travel-earth-light"
+            }`}>
             <svg
               className="h-6 w-6"
               fill="none"
@@ -240,10 +245,11 @@ const Navbar = () => {
                 className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md">
                 <span>Experience</span>
                 <svg
-                  className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === "mobileExperience"
-                    ? "transform rotate-180"
-                    : ""
-                    }`}
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    activeDropdown === "mobileExperience"
+                      ? "transform rotate-180"
+                      : ""
+                  }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -275,10 +281,11 @@ const Navbar = () => {
                 className="flex items-center justify-between w-full text-travel-earth-light hover:bg-travel-earth/20 px-3 py-2 rounded-md">
                 <span>About Us</span>
                 <svg
-                  className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === "mobileAboutUs"
-                    ? "transform rotate-180"
-                    : ""
-                    }`}
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    activeDropdown === "mobileAboutUs"
+                      ? "transform rotate-180"
+                      : ""
+                  }`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -314,10 +321,11 @@ const NavLink = ({ href, text, scrolled }) => {
   return (
     <Link to={href}>
       <div
-        className={`cursor-pointer ${scrolled
-          ? "text-travel-earth-light hover:text-blue-600"
-          : "text-white hover:text-blue-200"
-          } font-medium transition-colors duration-300`}>
+        className={`cursor-pointer ${
+          scrolled
+            ? "text-travel-earth-light hover:text-blue-600"
+            : "text-white hover:text-blue-200"
+        } font-medium transition-colors duration-300`}>
         {text}
       </div>
     </Link>
