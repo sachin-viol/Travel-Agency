@@ -106,14 +106,14 @@ const NewsletterSignup = () => {
   return (
     <div className="bg-travel-earth text-travel-cloud-white p-6 rounded-lg">
       <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
-      <p className="mb-4 text-travel-cloud-white/80">Get travel tips and inspiration delivered to your inbox.</p>
+      <p className="mb-4 text-travel-cloud-white/80">Get travel tips and inspiration delivered to your inboox.</p>
       <div className="flex flex-col space-y-3">
         <input
           type="email"
           placeholder="Your email address"
-          className="w-full p-3 border border-travel-cloud-white/20 bg-travel-cloud-white/10 rounded-lg placeholder-travel-cloud-white/60 focus:outline-none focus:ring-2 focus:ring-travel-cloud-white/30"
+          className="w-full p-3 border border-travel-cloud-white/20 bg-travel-cloud-white rounded-lg text-travel-teal placeholder:text-travel-teal focus:outline-none focus:ring-2 focus:ring-travel-cloud-white/30 text-sm"
         />
-        <button className="flex items-center justify-center bg-travel-cloud-white text-travel-teal font-medium py-3 px-4 rounded-lg hover:bg-travel-cloud-white/90 transition-colors">
+        <button className="flex items-center justify-center bg-travel-cloud-white text-travel-teal font-medium py-3 px-4 rounded-lg hover:bg-travel-cloud-white/90 transition-colors text-sm">
           <Mail size={16} className="mr-2" />
           Subscribe
         </button>
@@ -188,7 +188,7 @@ const Blog = () => {
 
             <div className="lg:w-1/3">
               <SearchBox />
-              <BlogCategories />
+              {/* <BlogCategories /> */}
               <PopularPosts />
               <NewsletterSignup />
             </div>

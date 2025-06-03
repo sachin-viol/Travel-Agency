@@ -1,8 +1,33 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e: any) => {
+    await e.preventdefault()
+    console.log("Here1");
+
+    try {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbxgUUhAa4QV6V7QkDpPsfXgdcnKoFttmJTG96TsyqBVZw4W85U3pNspb9I0DITgCu8blg/exec", {
+        method: "POST",
+        body: JSON.stringify({ name: "John Doe", email: "john@example.com" }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log("Here2");
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.error("Error submitting data", err);
+    }
+  };
 
   return (
     <footer className="bg-travel-earth-light text-travel-cloud-white">
@@ -121,17 +146,25 @@ const Footer = () => {
             <p className="text-travel-cloud-white/80 mb-4">
               Subscribe to receive updates on new destinations, special offers, and travel tips.
             </p>
-            <form className="flex flex-col sm:flex-row gap-2">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input
+                type="text"
+                placeholder="Name"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                className="px-4 py-3 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
+
+              />
               <input
                 type="email"
-                placeholder="Your email address"
+                placeholder="Email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
                 className="px-4 py-3 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
+
               />
-              <button
-                type="submit"
-                className="bg-travel-teal hover:bg-travel-teal-light px-6 py-3 rounded-md font-medium transition-colors"
-              >
-                Subscribe
+              <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+                Add Subscriber
               </button>
             </form>
           </div>
@@ -152,3 +185,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+// https://script.google.com/macros/s/AKfycbzus5xDedVx_eLQrVwfM8eZsQedJrui6AMMQsZZN5qh4h9cnLnMSbvshCplrNpOAWJS-A/exec
+
+// feat: add axios dependency and update Hero component with video background
+
+// - Added axios to package.json for API requests.
+// - Updated Hero component to include a video background with an image overlay.
+// - Enhanced text content and layout in the Hero section for better visibility.
+// - Refactored Navbar component for improved readability and structure.
+// - Implemented dropdown menus in the UI components for better navigation.
+// - Updated About page to link to the trips section.
+// - Minor adjustments in BlogService for consistency in string formatting.
