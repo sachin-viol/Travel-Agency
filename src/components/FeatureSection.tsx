@@ -116,11 +116,13 @@ const FeatureSection = () => {
               trips combine adventure, cultural immersion, and responsible tourism to give you the most
               enriching travel experience possible.
             </p>
-            <Link to="/trips">
-              <a className="px-8 py-3 text-lg font-semibold text-white transition-colors bg-orange-500 rounded-full hover:bg-orange-600">
-                Explore Our Trips
-              </a>
+            <Link
+              to="/trips"
+              className="px-8 py-3 text-lg font-semibold text-white transition-colors bg-orange-500 rounded-full hover:bg-orange-600"
+            >
+              Explore Our Trips
             </Link>
+
           </div>
         </section>
 
