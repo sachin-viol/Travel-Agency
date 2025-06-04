@@ -56,7 +56,7 @@ const Navbar = () => {
     aboutUs: [
       { label: "Our Story", href: "/about" },
       { label: "Meet Our Team", href: "/team" },
-      { label: "Career", href: "/careers" },
+      { label: "Career", href: "/career" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },
       { label: "Feedback", href: "/feedback" },

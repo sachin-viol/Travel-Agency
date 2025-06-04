@@ -32,7 +32,7 @@ const Team = () => {
               Passionate about travel and creating exceptional experiences? We're always looking for talented individuals to join our growing team.
             </p>
             <a
-              href="/careers"
+              href="/career"
               className="btn-primary inline-flex items-center"
             >
               View Open Positions

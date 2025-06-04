@@ -356,7 +356,7 @@ const DesktopNavigation = () => {
     },
     {
       title: "Careers",
-      href: "/careers",
+      href: "/career",
       description: "Reach out to our team for personalized assistance with your travel plans.",
     },
     {
