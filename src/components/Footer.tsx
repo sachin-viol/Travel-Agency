@@ -16,6 +16,15 @@ const Footer = () => {
     e.preventDefault();
     setIsLoading(true);
 
+    if (!name || !email) {
+      toast({
+        title: "Please fill all the fields",
+        variant: "destructive"
+      })
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const res = await fetch(import.meta.env.VITE_SCRIPT_NAME, {
         method: "POST",
@@ -170,7 +179,7 @@ const Footer = () => {
                 placeholder="Name"
                 value={name}
                 onChange={e => setName(e.target.value)}
-                className="px-4 py-3 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
+                className="px-4 py-3 mx-2 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
 
               />
               <input
