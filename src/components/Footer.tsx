@@ -12,21 +12,6 @@ const Footer = () => {
   const handleSubmit = async (e: any) => {
     await e.preventdefault()
     console.log("Here1");
-
-    try {
-      const res = await fetch("https://script.google.com/macros/s/AKfycbxgUUhAa4QV6V7QkDpPsfXgdcnKoFttmJTG96TsyqBVZw4W85U3pNspb9I0DITgCu8blg/exec", {
-        method: "POST",
-        body: JSON.stringify({ name: "John Doe", email: "john@example.com" }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      console.log("Here2");
-      const data = await res.json();
-      console.log(data);
-    } catch (err) {
-      console.error("Error submitting data", err);
-    }
   };
 
   return (
@@ -186,8 +171,6 @@ const Footer = () => {
 
 export default Footer;
 
-
-// https://script.google.com/macros/s/AKfycbzus5xDedVx_eLQrVwfM8eZsQedJrui6AMMQsZZN5qh4h9cnLnMSbvshCplrNpOAWJS-A/exec
 
 // feat: add axios dependency and update Hero component with video background
 
