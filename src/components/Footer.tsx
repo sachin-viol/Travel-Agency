@@ -179,7 +179,7 @@ const Footer = () => {
                 placeholder="Name"
                 value={name}
                 onChange={e => setName(e.target.value)}
-                className="px-4 py-3 mx-2 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
+                className="px-3 py-2 mx-2 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
 
               />
               <input
@@ -187,10 +187,10 @@ const Footer = () => {
                 placeholder="Email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className="px-4 py-3 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
+                className="px-3 py-2 rounded-md text-gray-800 flex-1 focus:outline-none focus:ring-2 focus:ring-travel-teal"
 
               />
-              <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+              <button type="submit" className="bg-blue-500 text-white px-3 py-2 ml-2 rounded text-md font-semibold hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400">
                 {isLoading ? "Subscribing" : "Subscribe"}
               </button>
             </form>
