@@ -2,18 +2,51 @@ import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from 'luci
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useToast } from '@/hooks/use-toast';
 
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false)
+  const { toast } = useToast();
 
   const handleSubmit = async (e: any) => {
-    await e.preventdefault()
-    console.log("Here1");
-  };
+    e.preventDefault();
+    setIsLoading(true);
 
+    try {
+      const res = await fetch(import.meta.env.VITE_SCRIPT_NAME, {
+        method: "POST",
+        mode: 'no-cors', // Add this line
+        body: JSON.stringify({ name: name, email: email }), // Use actual form values
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(res)
+
+      if (!res.status) {
+        toast({
+          title: "Form Submitted",
+          variant: "default"
+        })
+      }
+
+      // Note: You won't be able to read the response with no-cors mode
+
+      console.log("Form submitted");
+
+    } catch (err) {
+      setIsLoading(false);
+      console.error("Error submitting data", err);
+    } finally {
+      setIsLoading(false)
+      setEmail("");
+      setName("");
+    }
+  };
   return (
     <footer className="bg-travel-earth-light text-travel-cloud-white">
       <div className="container-custom pt-16 pb-8">
@@ -149,7 +182,7 @@ const Footer = () => {
 
               />
               <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
-                Add Subscriber
+                {isLoading ? "Subscribing" : "Add Subscriber"}
               </button>
             </form>
           </div>
@@ -170,7 +203,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 
 // feat: add axios dependency and update Hero component with video background
 
