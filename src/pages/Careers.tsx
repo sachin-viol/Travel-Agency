@@ -19,7 +19,7 @@ const Careers = () => {
 
 
         {/* Our Values */}
-        <section className="py-16 bg-white">
+        {/* <section className="py-16 bg-white">
           <div className="container-custom">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
@@ -68,10 +68,10 @@ const Careers = () => {
               </Card>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Benefits Section */}
-        <section className="py-16 bg-travel-earth/5">
+        {/* <section className="py-16 bg-travel-earth/5">
           <div className="container-custom">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth">
@@ -124,10 +124,10 @@ const Careers = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Open Positions Section */}
-        <section className="py-16 bg-white">
+        <section className="py- bg-white">
           <div className="container-custom">            <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-travel-earth" style={{ color: "#4AA3DF" }}>
               Current Opportunities
