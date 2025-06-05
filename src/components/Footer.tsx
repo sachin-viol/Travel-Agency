@@ -24,7 +24,6 @@ const Footer = () => {
       setIsLoading(false);
       return;
     }
-
     try {
       const res = await fetch(import.meta.env.VITE_SCRIPT_NAME, {
         method: "POST",
@@ -34,8 +33,6 @@ const Footer = () => {
           "Content-Type": "application/json",
         },
       });
-      console.log(res)
-
       if (!res.status) {
         toast({
           title: "Form Submitted",
@@ -56,6 +53,7 @@ const Footer = () => {
       setName("");
     }
   };
+
   return (
     <footer className="bg-travel-earth-light text-travel-cloud-white">
       <div className="container-custom pt-16 pb-8">

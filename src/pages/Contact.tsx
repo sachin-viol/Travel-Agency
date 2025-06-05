@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import PageHero from '@/components/PageHero';
+import axios from 'axios';
+import { toast } from 'sonner';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,23 +24,55 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
 
-    // Reset form submission status after 5 seconds
-    setTimeout(() => {
+    try {
+      const res = await fetch("https://echoedtech.vercel.app/api/contact/sendMail2  ", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      console.log('Response status:', res.status);
+
+      // Parse the response
+      const responseData = await res.json();
+      console.log('Response data:', responseData);
+
+      if (res.ok) {
+        toast.success(`Mail sent successfully!`, {
+          position: "bottom-right",
+        });
+
+        // Reset form data on success
+        setFormData({
+          email: "",
+          message: "",
+          name: "",
+          subject: "",
+          phone: ""
+        });
+      } else {
+        // Handle API errors
+        toast.error(`Error: ${responseData.error || 'Failed to send mail'}`, {
+          position: "bottom-right",
+        });
+      }
+    } catch (error: any) {
+      console.log("Network or parsing error:", error.message);
+      toast.error(`Network error: ${error.message}`, {
+        position: "bottom-right",
+      });
+    } finally {
       setIsSubmitted(false);
-    }, 5000);
+    }
   };
+
 
   return (
     <div className="min-h-screen">
