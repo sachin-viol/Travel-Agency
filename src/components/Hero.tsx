@@ -92,9 +92,10 @@ const Hero = () => {
                 </a>
               </div> */}
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center mt-8">
-                <button className="bg-travel-earth hover:bg-travel-earth-light text-white font-medium py-3 px-14 rounded-md transition-all duration-300 shadow-lg">
-                  <Link to="/trips">View Trips</Link>
+                <Link to="/trips"><button className="bg-travel-earth hover:bg-travel-earth-light text-white font-medium py-3 px-14 rounded-md transition-all duration-300 shadow-lg">
+                  View Trips
                 </button>
+                </Link>
               </div>
             </div>
           </div>
