@@ -139,21 +139,21 @@ const Careers = () => {
             <div className="max-w-6xl mx-auto space-y-8">
               {/* Job Posting 1: Group Trip Leader */}
               <Card className="bg-travel-earth/5 border-none shadow-sm" style={{ backgroundColor: "#F8FCFF" }}>
-                <CardContent className="p-8">
+                <CardContent className="sm:p-8 p-3">
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center">
-                      <div className="bg-travel-teal p-3 rounded-full mr-4">
-                        <MapPin className="h-6 w-6 text-white" />
+                      <div className="bg-travel-teal p-3 rounded-full md:mr-4 mr-2">
+                        <MapPin className="md:h-6 md:w-6 h-3 w-3 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-travel-earth text-left" style={{ color: "#4AA3DF" }}>
-                          🌍 We're Hiring: Group Trip Leader
+                        <h3 className="sm:text-2xl text-xl font-bold text-travel-earth sm:text-left text-center " style={{ color: "#4AA3DF" }}>
+                          🌍 We're Hiring: <span className="text-travel-earth inline-block">Group Trip Leader</span>
                         </h3>
-                        <p className="text-travel-earth-light">Posted on June 1, 2025</p>
+                        <p className="text-travel-earth-light text-xs sm:text-lg mt-2 sm:mt-0">Posted on June 1, 2025</p>
                       </div>
                     </div>
-                    <span className="bg-travel-teal/20 text-travel-teal px-4 py-1 rounded-full font-medium">
-                      Trip-Based
+                    <span className="bg-travel-teal/20 text-travel-teal sm:px-4 px-2 py-1 rounded-full font-medium text-xs w-fit" >
+                      Trip Based
                     </span>
                   </div>
 
@@ -332,20 +332,20 @@ const Careers = () => {
 
               {/* Job Posting 2: Social Media Content Creator */}
               <Card className="bg-travel-earth/5 border-none shadow-sm" style={{ backgroundColor: "#F8FCFF" }}>
-                <CardContent className="p-8">
+                <CardContent className="sm:p-8 p-3">
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center">
-                      <div className="bg-travel-sand p-3 rounded-full mr-4">
-                        <Users className="h-6 w-6 text-white" />
+                      <div className="bg-travel-sand p-3 rounded-full md:mr-4 mr-2">
+                        <Users className="md:h-6 md:w-6 h-3 w-3 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-travel-earth" style={{ color: "#4AA3DF" }}>
-                          📱 We're Hiring: Social Media Content Creator
+                        <h3 className="sm:text-2xl text-xl font-bold text-travel-earth" style={{ color: "#4AA3DF" }}>
+                          📱 We're Hiring: <span className="text-travel-earth inline-block">Social Media Content Creator</span>
                         </h3>
-                        <p className="text-travel-earth-light">Posted on June 1, 2025</p>
+                        <p className="text-travel-earth-light text-xs sm:text-lg mt-2 sm:mt-0">Posted on June 1, 2025</p>
                       </div>
                     </div>
-                    <span className="bg-travel-sand/20 text-travel-sand px-4 py-1 rounded-full font-medium">
+                    <span className="bg-travel-sand/20 text-travel-sand sm:px-4 px-2 py-1 rounded-full font-medium text-xs w-fit">
                       Freelance
                     </span>
                   </div>

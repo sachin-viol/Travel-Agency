@@ -47,7 +47,7 @@ const GuidedTravel = () => {
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               <div className="relative pl-16">
                 <dt className="text-base/7 font-semibold text-travel-earth-light">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-travel-earth">
+                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg ">
                     <img src="/network.png" alt="" className="size-8 text-white" />
                   </div>
                   Social Connections
@@ -59,7 +59,7 @@ const GuidedTravel = () => {
               </div>
               <div className="relative pl-16">
                 <dt className="text-base/7 font-semibold text-travel-earth-light">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-travel-earth">
+                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg ">
                     <img src="/freedom.png" alt="" className="size-8 text-white" />
                   </div>
                   Independence
@@ -72,7 +72,7 @@ const GuidedTravel = () => {
               </div>
               <div className="relative pl-16">
                 <dt className="text-base/7 font-semibold text-travel-earth-light">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-travel-earth">
+                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg ">
                     <img src="/planning.png" alt="" className="size-8 text-white" />
                   </div>
                   Expertly Planned
@@ -85,7 +85,7 @@ const GuidedTravel = () => {
               </div>
               <div className="relative pl-16">
                 <dt className="text-base/7 font-semibold text-travel-earth-light">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-travel-earth">
+                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg ">
                     <img src="/step-forward.png" alt="" className="size-8 text-white" />
                   </div>
                   The Best Pacing
