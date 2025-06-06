@@ -21,6 +21,7 @@ import Terms from "./pages/Terms";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import BlogDetail from "./pages/BlogDetail";
 import Feedback from "./pages/Feedback";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
