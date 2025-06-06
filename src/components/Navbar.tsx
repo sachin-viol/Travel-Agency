@@ -73,7 +73,7 @@ const Navbar = () => {
           : " border-2 border-white/30 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-lg"
           }`}>
         {/* Logo */}
-        <Link to="/">
+        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
           {/* <div className="flex items-center cursor-pointer font-['Alkaline'] italic"  style={{ fontFamily: 'Alkaline, sans-serif' }}>
             <span className={`text-2xl font-bold ${scrolled ? 'text-blue-400' : 'text-blue-300'}`}>
               Wander
@@ -134,9 +134,9 @@ const Navbar = () => {
           {/* About Us Dropdown */}
           <div className="hidden md:block mr-5 z-0 relative">
             <DropdownMenu onOpenChange={setIsOpen}>
-              <DropdownMenuTrigger asChild>
+              <DropdownMenuTrigger asChild className=" outline-none">
                 <button
-                  className={ `ring-0 flex items-center font-medium transition-colors duration-300 ${scrolled
+                  className={`ring-0 flex items-center font-medium transition-colors duration-300 ${scrolled
                     ? "text-travel-earth-light hover:text-blue-600"
                     : "text-white hover:text-blue-200 mr-3"
                     }`}
